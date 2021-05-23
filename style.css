@@ -1,0 +1,188 @@
+/* Loading Font Amithen */
+@font-face {
+  font-family: Amithen;
+  src: url("resources/fonts/Amithen.otf") format("opentype");
+}
+/* ===========================================================================*/
+/* jQuery lightSLider */
+.image_kissthecook {
+  width: 160%;
+  z-index: -100;
+}
+/* jQuery lightSLider-End */
+
+.navbar-brand {
+  font-family: Amithen;
+  font-size: 1.75rem;
+}
+/* ===========================================================================*/
+/* Cover */
+.block_cover {
+  position: relative;
+  border: 5em solid white;
+  bottom: 5em;
+  z-index: 100;
+}
+
+.cover_heading {
+  font-family: Amithen;
+  font-size: 7rem;
+}
+
+.cover_subheading {
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+  font-weight: 100;
+}
+/* Cover-End */
+/* ===========================================================================*/
+
+/* ===========================================================================*/
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  /* Cover */
+  .block_cover {
+    position: relative;
+    bottom: 2rem;
+    margin-right: 2.2rem;
+    margin-left: 2.2rem;
+    background-color: white;
+    border: 1.95rem solid white;
+    z-index: 5;
+  }
+
+  .cover_heading {
+    font-family: Amithen;
+    font-size: 2rem;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover_subheading {
+    font-weight: 100;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    background-color: white;
+  }
+  /* Cover-End */
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  /* Cover */
+  .block_cover {
+    position: relative;
+    bottom: 3.5rem;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    background-color: white;
+    border: 1.95rem solid white;
+    z-index: 5;
+  }
+
+  .cover_heading {
+    font-family: Amithen;
+    font-size: 3.55rem;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover_subheading {
+    font-weight: 100;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    background-color: white;
+  }
+  /* Cover-End */
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  /* Cover */
+  .block_cover {
+    position: relative;
+    bottom: 3.5rem;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    background-color: white;
+    border: 1.95rem solid white;
+    z-index: 5;
+  }
+
+  .cover_heading {
+    font-family: Amithen;
+    font-size: 4.55rem;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover_subheading {
+    font-weight: 100;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    background-color: white;
+  }
+  /* Cover-End */
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Cover */
+  .block_cover {
+    position: relative;
+    bottom: 3.5rem;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    background-color: white;
+    border: 1.95rem solid white;
+    z-index: 5;
+  }
+
+  .cover_heading {
+    font-family: Amithen;
+    font-size: 5.55rem;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover_subheading {
+    font-weight: 100;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    background-color: white;
+  }
+  /* Cover-End */
+}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  /* Cover */
+  .block_cover {
+    position: relative;
+    bottom: 3.5rem;
+    margin-right: 1.2rem;
+    margin-left: 1.2rem;
+    background-color: white;
+    border: 1.95rem solid white;
+    z-index: 5;
+  }
+
+  .cover_heading {
+    font-family: Amithen;
+    font-size: 6.55rem;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover_subheading {
+    font-weight: 100;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.45rem;
+    background-color: white;
+  }
+  /* Cover-End */
+}
+/* Media Queries-End */
+/* ===========================================================================*/

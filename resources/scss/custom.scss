@@ -1,13 +1,13 @@
 // Fonts
-$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-sans-serif: 'Khand', sans-serif;
 
 // Colors
-$primary: #FFE9B0;
-$secondary: #AB8467;
+$primary: #943131;
+$secondary: #bb9647;
 $success: #2D5E38;
 $info: #AEEEF7;
 $danger: #763E3E;
 $warning: #FFE03A;
 
 // Import Bootstrap
-@import url(../../node_modules/bootstrap/scss/bootstrap.scss); 
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

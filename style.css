@@ -33,8 +33,47 @@
   text-transform: uppercase;
   letter-spacing: 0.6rem;
   font-weight: 100;
+  font-family: "Khand", sans-serif;
 }
+
+.card-icon {
+  font-size: 32px;
+  margin-top: 10px;
+}
+
 /* Cover-End */
+/* ===========================================================================*/
+
+/* ===========================================================================*/
+/* Components */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Khand", sans-serif;
+}
+
+.card-plans-separator {
+  border-bottom: 1px solid #cacaca;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-plans-separator:last-child {
+  border-bottom: 0px solid;
+}
+
+.card {
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Components-End */
 /* ===========================================================================*/
 
 /* ===========================================================================*/

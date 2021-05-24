@@ -13,6 +13,9 @@
     <!-- Khand font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Style.css -->
     <link rel="stylesheet" href="style.css">
     <!-- Leaflet.js -->
@@ -36,26 +39,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active fs-5 fw-bold" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link fs-5" href="#">Link</a>
+                        <a class="nav-link" href="#">Link</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle fs-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item fs-5" href="#">Action</a></li>
-                            <li><a class="dropdown-item fs-5" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item fs-5" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled fs-5" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
                     </li>
                 </ul>
                 <form class="d-flex">
@@ -68,7 +71,7 @@
     <!-- Navigation-End -->
 
     <!-- jQuery lightSlider -->
-    <section class="">
+    <aside class="">
         <ul id="light-slider">
             <li>
                 <img src="resources/img/1.jpeg" class="d-block w-100" alt="...">
@@ -90,20 +93,24 @@
             </li>
             ...
         </ul>
-    </section>
+    </aside>
     <!-- jQuery lightSlider-End -->
 
     <!-- Cover -->
-    <section class="container">
+    <main class="container">
         <div class="shadow block_cover">
-            <h1 class="text-center cover_heading">Träume-Bauer</h1>
-            <h2 class="text-center cover_subheading">Traumhafte Ferienappartements</h2>
+            <h1 class="text-center cover_heading">
+                Träume-Bauer
+            </h1>
+            <h2 class="text-center cover_subheading">
+                Traumhafte Ferienappartements
+            </h2>
         </div>
-    </section>
+    </main>
     <!-- Cover-End -->
 
     <!-- Ferienwohnung "Zweite Heimat"  -->
-    <section class="container">
+    <main class="container">
         <div class="col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
@@ -128,11 +135,11 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
     <!-- Ferienwohnung "Zweite Heimat"-End  -->
 
     <!-- Ferienwohnung "Lieblingsort"  -->
-    <section class="container">
+    <main class="container">
         <div class="col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-lg-6">
@@ -157,8 +164,255 @@
                 </div>
             </div>
         </div>
-    </section>
+    </main>
     <!-- Ferienwohnung "Lieblingsort"-End  -->
+
+    <main class="container mt-5">
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">
+                            „Lieblingsmensch“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">
+                            €199
+                            <small class="text-muted fw-light">
+                                /2 Personen
+                            </small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" class="" name="bed-outline"></ion-icon>
+                                1 Übernachtung im Doppelzimmer
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="restaurant-outline"></ion-icon>
+                                Candle-Light-Dinner im Gutshof -4 Gänge Menü + eine Flasche Gutswein + Mineralwasser+ Aperitif-
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon class="card-icon" size="" name="wine-outline"></ion-icon>
+                                1x Flasche Romeo Secco im Zimmer
+                            </li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                            Termin vereinbaren
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">
+                            „Winterzeit“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">
+                            €299
+                            <small class="text-muted fw-light">
+                                /2 Personen
+                            </small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="bed-outline"></ion-icon>
+                                3 Übernachtung in der Ferienwohnung
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="restaurant-outline"></ion-icon>
+                                1x Kaffee & Kuchen im Gutshof
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="wine-outline"></ion-icon>
+                                Glühwein zum Empfang
+                            </li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">
+                            Termin vereinbaren
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">
+                            „Pfälzer Land“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">
+                            €435
+                            <small class="text-muted fw-light">
+                                /2 Personen
+                            </small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="bed-outline"></ion-icon>
+                                3 Übernachtungen in der Ferienwohnung
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="restaurant-outline"></ion-icon>
+                                Frühstückskorb
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="wine-outline"></ion-icon>
+                                Weinprobe im Gutshof + Pfälzer Teller und einer Flasche Gutswein
+                            </li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                            Termin vereinbaren
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">
+                            „Sei nicht sauer…“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">
+                            €470
+                            <small class="text-muted fw-light">
+                                /2 Personen
+                            </small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="bed-outline"></ion-icon>
+                                3 Übernachtungen in der Ferienwohnung
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="restaurant-outline"></ion-icon>
+                                Frühstückskorb
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="wine-outline"></ion-icon>
+                                1 Führung im Doktorenhof (nur Samstags möglich)
+                            </li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                            Termin vereinbaren
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3 text-white bg-primary border-primary">
+                        <h4 class="my-0 fw-normal">
+                            „Völlig ungezwungen….Urlaub in und um Venningen“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">
+                            €799
+                            <small class="text-muted fw-light">
+                                /2 Personen
+                            </small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" class="" name="bed-outline"></ion-icon>
+                                7 Übernachtungen in der Ferienwohnung
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="restaurant-outline"></ion-icon>
+                                Frühstückskorb
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="wine-outline"></ion-icon>
+                                1 Führung im Doktorenhof (nur Samstags möglich)
+                            </li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-primary">
+                            Termin vereinbaren
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">
+                            „verlängertes Mädelswochenende“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">
+                            €999
+                            <small class="text-muted fw-light">
+                                /4 Personen
+                            </small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="bed-outline"></ion-icon>
+                                4 Übernachtungen in der Ferienwohnung
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="restaurant-outline"></ion-icon>
+                                Schnabulierplatte im Gutshof -viele Kleinigkeiten wie z. B. Tomaten-Mozzarella, Melone-Schinken, Ziegenkäse…
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="wine-outline"></ion-icon>
+                                Secco Romeo & Julia in der Ferienwohnung
+                            </li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                            Termin vereinbaren
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+            <div class="col">
+                <div class="card mb-4 rounded-3 shadow-sm">
+                    <div class="card-header py-3">
+                        <h4 class="my-0 fw-normal">
+                            „Erntezeit“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h1 class="card-title pricing-card-title">
+                            €850
+                            <small class="text-muted fw-light">
+                                /2 Personen
+                            </small>
+                        </h1>
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="bed-outline"></ion-icon>
+                                7 Übernachtungen in der Ferienwohnung
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="restaurant-outline"></ion-icon>
+                                Frühstückskorb + 1x Neuer Wein und Flammkuchenabend im Gutshof 1x Saumagenabend und 1 Flasche Gutswein im Gutshof
+                            </li>
+                            <li class="card-plans-separator">
+                                <ion-icon size="large" name="wine-outline"></ion-icon>
+                                1 Flasche Winzersekt im Zimmer
+                            </li>
+                        </ul>
+                        <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                            Termin vereinbaren
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <!--====================================================================-->
     <!-- Scripts -->

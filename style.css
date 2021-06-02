@@ -11,6 +11,7 @@
 }
 /* jQuery lightSLider-End */
 
+/* Navigation */
 .navbar-brand {
   font-family: Amithen;
   font-size: 1.75rem;
@@ -35,12 +36,6 @@
   font-weight: 100;
   font-family: "Khand", sans-serif;
 }
-
-.card-icon {
-  font-size: 32px;
-  margin-top: 10px;
-}
-
 /* Cover-End */
 /* ===========================================================================*/
 

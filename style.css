@@ -4,18 +4,44 @@
   src: url("resources/fonts/Amithen.otf") format("opentype");
 }
 /* ===========================================================================*/
+/* Components */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Khand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+/* Components-End */
+/* ===========================================================================*/
+
+/* ===========================================================================*/
 /* jQuery lightSLider */
 .image_kissthecook {
   width: 160%;
   z-index: -100;
 }
 /* jQuery lightSLider-End */
+/* ===========================================================================*/
 
+/* ===========================================================================*/
 /* Navigation */
 .navbar-brand {
   font-family: Amithen;
   font-size: 2.5rem;
 }
+/* Navigation-End */
+/* ===========================================================================*/
+
 /* ===========================================================================*/
 /* Cover */
 .block_cover {
@@ -40,24 +66,7 @@
 /* ===========================================================================*/
 
 /* ===========================================================================*/
-/* Components */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Khand", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-}
-
+/* Price Cards */
 .card-plans-separator {
   border-bottom: 1px solid #cacaca;
   padding-top: 1rem;
@@ -76,7 +85,30 @@ p {
   transform: scale(1.05);
 }
 
-/* Components-End */
+.pricelist-icon {
+  font-size: 40px;
+}
+/* Price Cards-End */
+/* ===========================================================================*/
+
+/* ===========================================================================*/
+/* Punny Doppelzimmer */
+.punny-doppelzimmer {
+  padding: 50rem;
+}
+
+.transparent-grapes-left {
+  position: absolute;
+  left: -500px;
+  bottom: 250px;
+}
+
+.transparent-grapes-right {
+  position: absolute;
+  right: -400px;
+  bottom: 0px;
+}
+/* Punny Doppelzimmer-End */
 /* ===========================================================================*/
 
 /* ===========================================================================*/

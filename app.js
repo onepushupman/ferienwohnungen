@@ -1,3 +1,20 @@
+// Remove .active class from navbar when in burger menu
+jQuery(document).ready(function($) {
+    var alterClass = function() {
+      var ww = document.body.clientWidth;
+      if (ww < 992) {
+        $('#activeNavbarPagination').removeClass('active').addClass('text-dark');
+      } else if (ww >= 993) {
+        $('#activeNavbarPagination').addClass('active').removeClass('text-dark');
+      };
+    };
+    $(window).resize(function(){
+      alterClass();
+    });
+    //Fire it when the page first loads:
+    alterClass();
+  });
+
 // jQuery lightSlider Cover
 $(document).ready(function() {
     $("#light-slider").lightSlider({

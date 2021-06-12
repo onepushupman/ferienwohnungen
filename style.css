@@ -54,6 +54,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: 'Roboto', sans-serif;
+}
+
 .card-plans-separator {
   border-bottom: 1px solid #cacaca;
   padding-top: 1rem;

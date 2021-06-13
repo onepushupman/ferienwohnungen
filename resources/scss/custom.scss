@@ -10,5 +10,10 @@ $info: #aeeef7;
 $danger: #763e3e;
 $warning: #ffe03a;
 
+// Font Sizes
+$font-size-base: 1rem;
+$lead-font-size: $font-size-base * 1.20;
+$lead-font-weight: 300;
+
 // Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

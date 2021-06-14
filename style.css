@@ -39,6 +39,10 @@ p {
   font-family: Amithen;
   font-size: 2.5rem;
 }
+
+.nav {
+  padding-left: 12rem;
+}
 /* Navigation-End */
 /* ===========================================================================*/
 
@@ -46,9 +50,10 @@ p {
 /* Cover */
 .block_cover {
   position: relative;
-  border: 5em solid white;
-  bottom: 5em;
-  z-index: 100;
+  border: 5rem solid white;
+  bottom: 10rem;
+  background-color: white;
+  z-index: 10;
 }
 
 .cover_heading {
@@ -138,74 +143,19 @@ p {
 
 /* ===========================================================================*/
 /* Media Queries */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  /* Cover */
-  .block_cover {
-    position: relative;
-    bottom: 2rem;
-    margin-right: 2.2rem;
-    margin-left: 2.2rem;
-    background-color: white;
-    border: 1.95rem solid white;
-    z-index: 5;
-  }
 
-  .cover_heading {
-    font-family: Amithen;
-    font-size: 2rem;
-    background-color: white;
-    z-index: 10;
-  }
-
-  .cover_subheading {
-    font-weight: 100;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    background-color: white;
-  }
-  /* Cover-End */
-}
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  /* Cover */
-  .block_cover {
-    position: relative;
-    bottom: 3.5rem;
-    margin-right: 1.2rem;
-    margin-left: 1.2rem;
-    background-color: white;
-    border: 1.95rem solid white;
-    z-index: 5;
-  }
-
-  .cover_heading {
-    font-family: Amithen;
-    font-size: 3.55rem;
-    background-color: white;
-    z-index: 10;
-  }
-
-  .cover_subheading {
-    font-weight: 100;
-    font-size: 0.95rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    background-color: white;
-  }
-  /* Cover-End */
-}
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+/* Extra large devices (super large laptops and desktops, 1399px and down) */
+@media screen and (max-width: 1399px) {
   /* Navigation */
-
+  .nav {
+    padding-left: 6.93rem;
+  }
   /* Navigation-End */
 
   /* Cover */
   .block_cover {
     position: relative;
-    bottom: 3.5rem;
+    bottom: 7.5rem;
     margin-right: 1.2rem;
     margin-left: 1.2rem;
     background-color: white;
@@ -215,32 +165,70 @@ p {
 
   .cover_heading {
     font-family: Amithen;
-    font-size: 4.55rem;
+    font-size: 6.55rem;
     background-color: white;
     z-index: 10;
   }
 
   .cover_subheading {
     font-weight: 100;
-    font-size: 1.1rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
-    letter-spacing: 0.3rem;
+    letter-spacing: 0.45rem;
     background-color: white;
   }
   /* Cover-End */
 }
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media screen and (max-width: 1200px) {
   /* Navigation */
-
+  .nav {
+    padding-left: 1.93rem;
+  }
   /* Navigation-End */
 
   /* Cover */
   .block_cover {
     position: relative;
-    bottom: 3.5rem;
+    bottom: 5.5rem;
     margin-right: 1.2rem;
     margin-left: 1.2rem;
+    background-color: white;
+    border: 1.95rem solid white;
+    z-index: 5;
+  }
+
+  .cover_heading {
+    font-family: Amithen;
+    font-size: 6.55rem;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover_subheading {
+    font-weight: 100;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.45rem;
+    background-color: white;
+  }
+  /* Cover-End */
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+  /* Navigation */
+  .nav {
+    padding-left: 0rem;
+  }
+  /* Navigation-End */
+
+  /* Cover */
+  .block_cover {
+    position: relative;
+    bottom: 5.5rem;
+    margin-right: .2rem;
+    margin-left: .2rem;
     background-color: white;
     border: 1.95rem solid white;
     z-index: 5;
@@ -262,18 +250,18 @@ p {
   }
   /* Cover-End */
 }
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* small devices (phones, 767px and down) */
+@media screen and (max-width: 767px) {
   /* Navigation */
-
+  .nav {
+    padding-left: 0rem;
+  }
   /* Navigation-End */
 
   /* Cover */
   .block_cover {
     position: relative;
-    bottom: 3.5rem;
-    margin-right: 1.2rem;
-    margin-left: 1.2rem;
+    bottom: 5.5rem;
     background-color: white;
     border: 1.95rem solid white;
     z-index: 5;
@@ -281,16 +269,51 @@ p {
 
   .cover_heading {
     font-family: Amithen;
-    font-size: 6.55rem;
+    font-size: 4.55rem;
     background-color: white;
     z-index: 10;
   }
 
   .cover_subheading {
     font-weight: 100;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     text-transform: uppercase;
-    letter-spacing: 0.45rem;
+    letter-spacing: 0.3rem;
+    background-color: white;
+  }
+  /* Cover-End */
+}
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  /* Navigation */
+  .nav {
+    padding-left: 0rem;
+  }
+  /* Navigation-End */
+
+  /* Cover */
+  .block_cover {
+    position: relative;
+    bottom: 2rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    background-color: white;
+    border: 1.95rem solid white;
+    z-index: 5;
+  }
+
+  .cover_heading {
+    font-family: Amithen;
+    font-size: 3rem;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover_subheading {
+    font-weight: 100;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
     background-color: white;
   }
   /* Cover-End */

@@ -169,6 +169,21 @@ p {
   font-size: 8rem;
 }
 
+.frühstückskorb-icon {
+  font-size: 50px; 
+}
+.doktorenhof-icon{
+  font-size: 50px; 
+}
+.restaurant-icon {
+  font-size: 50px; 
+}
+.fahrrad-icon {
+  font-size: 50px; 
+}
+.hike-icon {
+  font-size: 50px; 
+}
 /* Ferienwohnungen-End */
 /* ===========================================================================*/
 /* Media Queries */

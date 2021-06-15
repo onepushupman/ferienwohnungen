@@ -140,10 +140,10 @@ p {
 }
 /* Footer-End */
 /* ===========================================================================*/
-
+/* Ferienwohnungen */
 .lieblingsort-dark-preview {
   position: relative;
-  height: 65em;  
+  height: 65em;
 }
 
 .lieblingsort-dark-preview::before {
@@ -169,6 +169,7 @@ p {
   font-size: 8rem;
 }
 
+/* Ferienwohnungen-End */
 /* ===========================================================================*/
 /* Media Queries */
 
@@ -255,8 +256,8 @@ p {
   .block_cover {
     position: relative;
     bottom: 5.5rem;
-    margin-right: .2rem;
-    margin-left: .2rem;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
     background-color: white;
     border: 1.95rem solid white;
     z-index: 5;
@@ -323,8 +324,8 @@ p {
   .block_cover {
     position: relative;
     bottom: 2rem;
-    margin-right: .5rem;
-    margin-left: .5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
     background-color: white;
     border: 1.95rem solid white;
     z-index: 5;

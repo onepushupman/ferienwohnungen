@@ -126,3 +126,11 @@ $(document).ready(function () {
     onBeforePrevSlide: function (el) {},
   });
 });
+
+// LightGallery
+lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+  animateThumb: false,
+  zoomFromOrigin: false,
+  allowMediaOverlap: true,
+  toggleThumb: true,
+});

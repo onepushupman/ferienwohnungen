@@ -170,19 +170,19 @@ p {
 }
 
 .frühstückskorb-icon {
-  font-size: 50px; 
+  font-size: 50px;
 }
-.doktorenhof-icon{
-  font-size: 50px; 
+.doktorenhof-icon {
+  font-size: 50px;
 }
 .restaurant-icon {
-  font-size: 50px; 
+  font-size: 50px;
 }
 .fahrrad-icon {
-  font-size: 50px; 
+  font-size: 50px;
 }
 .hike-icon {
-  font-size: 50px; 
+  font-size: 50px;
 }
 /* Ferienwohnungen-End */
 /* ===========================================================================*/
@@ -293,6 +293,12 @@ p {
     background-color: white;
   }
   /* Cover-End */
+
+  /* Ferienwohnungen */
+  .second-row--unternehmungen {
+    margin: 0;
+  }
+  /* Ferienwohnungen-End */
 }
 /* small devices (phones, 767px and down) */
 @media screen and (max-width: 767px) {
@@ -361,6 +367,22 @@ p {
     background-color: white;
   }
   /* Cover-End */
+
+  /* Ferienwohnungen */
+  .lieblingsort-dark-preview {
+    position: relative;
+    height: 35em;
+  }
+
+  .lieblingsort-dark-inside {
+    margin: 0;
+    padding-top: 5rem; 
+  }
+
+  .brand-font {
+    font-size: 5em; 
+  }
+  /* Ferienwohnungen-End */
 }
 /* Media Queries-End */
 /* ===========================================================================*/

@@ -184,17 +184,10 @@ p {
 .hike-icon {
   font-size: 50px;
 }
-
-.lightGallery-picture {
-  max-width: none; 
-  width: 390px; 
-  height: 260px; 
-}
-
 /* Ferienwohnungen-End */
+
 /* ===========================================================================*/
 /* Media Queries */
-
 /* Extra large devices (super large laptops and desktops, 1399px and down) */
 @media screen and (max-width: 1399px) {
   /* Navigation */
@@ -388,6 +381,57 @@ p {
 
   .brand-font {
     font-size: 5em;
+  }
+  /* Ferienwohnungen-End */
+}
+/* Extra small devices (phones, 345px and down) */
+@media screen and (max-width: 345px) {
+  /* Navigation */
+  .nav {
+    padding-left: 0rem;
+  }
+  /* Navigation-End */
+
+  /* Cover */
+  .block_cover {
+    position: relative;
+    bottom: 2rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    background-color: white;
+    border: 1.95rem solid white;
+    z-index: 5;
+  }
+
+  .cover_heading {
+    font-family: Amithen;
+    font-size: 3rem;
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover_subheading {
+    font-weight: 100;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    background-color: white;
+  }
+  /* Cover-End */
+
+  /* Ferienwohnungen */
+  .lieblingsort-dark-preview {
+    position: relative;
+    height: 35em;
+  }
+
+  .lieblingsort-dark-inside {
+    margin: 0;
+    padding-top: 3rem;
+  }
+
+  .brand-font {
+    font-size: 4em;
   }
   /* Ferienwohnungen-End */
 }

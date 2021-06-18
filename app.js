@@ -126,3 +126,7 @@ $(document).ready(function () {
     onBeforePrevSlide: function (el) {},
   });
 });
+
+// On Resize - Google Map
+$(window).resize(function(){ 
+  $('#map-canvas').height($( window ).height());

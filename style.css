@@ -253,6 +253,20 @@ p {
   position: relative;
   padding-top: 18em;
 }
+
+.kontakt-link {
+  color: rgb(59, 59, 59); 
+}
+
+.kontakt-link:hover {
+  border-bottom: 2.5px solid rgb(110, 110, 110);
+}
+
+.kontakt-link:active {
+  border-bottom: 2.5px solid rgb(110, 110, 110);
+}
+
+
 /* Kontakt-End */
 
 /* ===========================================================================*/

@@ -24,10 +24,11 @@ p {
 
 .b-divider {
   height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: solid rgba(0, 0, 0, 0.15);
   border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+  box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+    inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
 }
 /* Components-End */
 /* ===========================================================================*/
@@ -255,7 +256,7 @@ p {
 }
 
 .kontakt-link {
-  color: rgb(59, 59, 59); 
+  color: rgb(59, 59, 59);
 }
 
 .kontakt-link:hover {
@@ -265,7 +266,6 @@ p {
 .kontakt-link:active {
   border-bottom: 2.5px solid rgb(110, 110, 110);
 }
-
 
 /* Kontakt-End */
 
@@ -392,10 +392,22 @@ p {
     padding-top: 6rem;
   }
 
+  /* Universal for all Cover pages */
   .brand-font {
     font-size: 6em;
   }
   /* Ferienwohnungen-End */
+
+  /* Kontakt */
+  .kontakt-dark-preview {
+    position: relative;
+    height: 40em;
+  }
+
+  .kontakt-dark-inside {
+    padding-top: 6rem;
+  }
+  /* Kontakt-End */
 }
 /* small devices (phones, 767px and down) */
 @media screen and (max-width: 767px) {
@@ -441,10 +453,23 @@ p {
     padding-top: 5rem;
   }
 
+  /* Universal for all Cover pages */
   .brand-font {
     font-size: 5em;
   }
+
   /* Ferienwohnungen-End */
+
+  /* Kontakt */
+  .kontakt-dark-preview {
+    position: relative;
+    height: 35em;
+  }
+
+  .kontakt-dark-inside {
+    padding-top: 5rem;
+  }
+  /* Kontakt-End */
 }
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
@@ -492,10 +517,23 @@ p {
     padding-top: 5rem;
   }
 
+  /* Universal for all Cover pages */
   .brand-font {
     font-size: 5em;
   }
   /* Ferienwohnungen-End */
+
+  /* Kontakt */
+  .kontakt-dark-preview {
+    position: relative;
+    height: 35em;
+  }
+
+  .kontakt-dark-inside {
+    margin: 0;
+    padding-top: 5rem;
+  }
+  /* Kontakt-End */
 }
 /* Extra small devices (phones, 406px and down) */
 @media screen and (max-width: 406px) {
@@ -543,10 +581,23 @@ p {
     padding-top: 3rem;
   }
 
+  /* Universal for all Cover pages */
   .brand-font {
     font-size: 4em;
   }
   /* Ferienwohnungen-End */
+
+  /* Kontakt */
+  .kontakt-dark-preview {
+    position: relative;
+    height: 35em;
+  }
+
+  .kontakt-dark-inside {
+    margin: 0;
+    padding-top: 3rem;
+  }
+  /* Kontakt-End */
 }
 /* Media Queries-End */
 /* ===========================================================================*/

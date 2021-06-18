@@ -184,6 +184,13 @@ p {
 .hike-icon {
   font-size: 50px;
 }
+
+.lightGallery-picture {
+  max-width: none; 
+  width: 390px; 
+  height: 260px; 
+}
+
 /* Ferienwohnungen-End */
 /* ===========================================================================*/
 /* Media Queries */
@@ -376,11 +383,11 @@ p {
 
   .lieblingsort-dark-inside {
     margin: 0;
-    padding-top: 5rem; 
+    padding-top: 5rem;
   }
 
   .brand-font {
-    font-size: 5em; 
+    font-size: 5em;
   }
   /* Ferienwohnungen-End */
 }

@@ -129,8 +129,13 @@ $(document).ready(function () {
 
 // LightGallery
 lightGallery(document.getElementById('animated-thumbnails-gallery'), {
+  mode: 'lg-slide',
   animateThumb: false,
   zoomFromOrigin: false,
   allowMediaOverlap: true,
   toggleThumb: true,
 });
+
+document.getElementById( "Img" ).onclick = function() {
+  // img clicked
+};

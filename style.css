@@ -185,7 +185,6 @@ p {
   font-size: 50px;
 }
 /* Ferienwohnungen-End */
-
 /* ===========================================================================*/
 /* Media Queries */
 /* Extra large devices (super large laptops and desktops, 1399px and down) */
@@ -298,6 +297,20 @@ p {
   .second-row--unternehmungen {
     margin: 0;
   }
+
+  .lieblingsort-dark-preview {
+    position: relative;
+    height: 40em;
+  }
+
+  .lieblingsort-dark-inside {
+    margin: 0;
+    padding-top: 6rem;
+  }
+
+  .brand-font {
+    font-size: 6em;
+  }
   /* Ferienwohnungen-End */
 }
 /* small devices (phones, 767px and down) */
@@ -332,6 +345,22 @@ p {
     background-color: white;
   }
   /* Cover-End */
+
+  /* Ferienwohnungen */
+  .lieblingsort-dark-preview {
+    position: relative;
+    height: 35em;
+  }
+
+  .lieblingsort-dark-inside {
+    margin: 0;
+    padding-top: 5rem;
+  }
+
+  .brand-font {
+    font-size: 5em;
+  }
+  /* Ferienwohnungen-End */
 }
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
@@ -384,8 +413,8 @@ p {
   }
   /* Ferienwohnungen-End */
 }
-/* Extra small devices (phones, 345px and down) */
-@media screen and (max-width: 345px) {
+/* Extra small devices (phones, 406px and down) */
+@media screen and (max-width: 406px) {
   /* Navigation */
   .nav {
     padding-left: 0rem;

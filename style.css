@@ -21,6 +21,14 @@ a {
 p {
   font-family: "Roboto", sans-serif;
 }
+
+.b-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
 /* Components-End */
 /* ===========================================================================*/
 
@@ -185,6 +193,38 @@ p {
   font-size: 50px;
 }
 /* Ferienwohnungen-End */
+
+/* Ausflüge */
+.ausflüge-cover-dark {
+  position: relative;
+  height: 65em;
+}
+
+.ausflüge-cover-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("https://images.unsplash.com/photo-1572360678077-0ab5ce1be418?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1667&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(35%);
+}
+
+.ausflüge-cover-inside {
+  position: relative;
+  padding-top: 18em;
+}
+
+.pfalz-icon {
+  font-size: 50px;
+}
+.glass-icon {
+  font-size: 30px;
+}
+/* Ausflüge-End */
 /* ===========================================================================*/
 /* Media Queries */
 /* Extra large devices (super large laptops and desktops, 1399px and down) */

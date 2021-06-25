@@ -233,7 +233,7 @@ p {
 /* Ausflüge-End */
 
 /* Kontakt */
-.kontakt-dark-preview {
+.kontakt-cover-dark{
   position: relative;
   height: 65em;
 }
@@ -250,7 +250,7 @@ p {
   -webkit-filter: brightness(35%);
 }
 
-.kontakt-dark-inside {
+.kontakt-cover-inside {
   position: relative;
   padding-top: 18em;
 }
@@ -399,12 +399,12 @@ p {
   /* Ferienwohnungen-End */
 
   /* Kontakt */
-  .kontakt-dark-preview {
+  .kontakt-cover-dark{
     position: relative;
     height: 40em;
   }
 
-  .kontakt-dark-inside {
+  .kontakt-cover-inside {
     padding-top: 6rem;
   }
   /* Kontakt-End */
@@ -472,12 +472,12 @@ p {
   /* Ferienwohnungen-End */
 
   /* Kontakt */
-  .kontakt-dark-preview {
+  .kontakt-cover-dark{
     position: relative;
     height: 35em;
   }
 
-  .kontakt-dark-inside {
+  .kontakt-cover-inside {
     padding-top: 5rem;
   }
   /* Kontakt-End */
@@ -546,12 +546,12 @@ p {
   /* Ferienwohnungen-End */
 
   /* Kontakt */
-  .kontakt-dark-preview {
+  .kontakt-cover-dark{
     position: relative;
     height: 35em;
   }
 
-  .kontakt-dark-inside {
+  .kontakt-cover-inside {
     margin: 0;
     padding-top: 5rem;
   }
@@ -622,12 +622,12 @@ p {
   /* Ferienwohnungen-End */
 
   /* Kontakt */
-  .kontakt-dark-preview {
+  .kontakt-cover-dark{
     position: relative;
     height: 35em;
   }
 
-  .kontakt-dark-inside {
+  .kontakt-cover-inside {
     margin: 0;
     padding-top: 3rem;
   }

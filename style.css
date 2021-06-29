@@ -155,6 +155,14 @@ ion-icon:hover {
 
 /* Icons-End */
 
+.zweiteheimat-ferienwohnung-container {
+  margin-top: -6rem; 
+}
+
+.partner-container {
+  margin-top: 6rem !important; 
+  margin-bottom: 6rem !important; 
+}
 
 /* Components-End */
 /* ===========================================================================*/
@@ -185,24 +193,25 @@ ion-icon:hover {
 
 /* ===========================================================================*/
 /* Cover */
-.block_cover {
+.block-cover {
   position: relative;
-  border: 5rem solid white;
+  border: .2rem solid black;
   bottom: 10rem;
   background-color: white;
   z-index: 10;
 }
-
-.cover_heading {
+.cover-heading {
   font-family: Amithen;
   font-size: 7rem;
+  margin-top: 5rem; 
 }
 
-.cover_subheading {
+.cover-subheading {
   text-transform: uppercase;
-  letter-spacing: 0.6rem;
+  letter-spacing: 0.8rem;
   font-weight: 100;
   font-family: "Khand", sans-serif;
+  margin-bottom: 5rem; 
 }
 
 /* Cover-End */
@@ -240,8 +249,8 @@ ion-icon:hover {
 .punny-doppelzimmer {
   padding: 50rem;
   background-color: #3d4b7111;
-  margin-top: 1rem !important;
-  margin-bottom: 8rem !important;
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
 }
 
 .punny-hero {

@@ -272,8 +272,16 @@
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold lh-1 mb-3">
+                    <h2 class="display-5 fw-bold lh-1 mb-3 cover-page-marker">
                         Ferienwohnung „Lieblingsort“
+                        <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+                            <defs>
+                                <filter id="marker-shape">
+                                    <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+                                    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+                                </filter>
+                            </defs>
+                        </svg>
                     </h2>
                     <!-- Star Icon -->
                     <div class="mb-3">
@@ -300,22 +308,22 @@
                             <path
                                 d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
                         </svg>
-                        <span class="fw-semibold">
+                        <span class="fs-5">
                             2 Personen Appartement
                         </span>
                     </div>
-                    <p class="lead">
+                    <p class="fs-5">
                         Genießen Sie den Aufenthalt in unserem neuen Apartmenthaus Träume-Bauer. Dieses haben wir im Januar 2019 komplett saniert und umgebaut. „Lieblingsort“ sagt schon alles aus… Sie
                         sollen sich bei uns rundum wohlfühlen! Mit schöner Terrasse und kleinem Träumegarten.
                     </p>
                     <div class="d-grid gap-2 d-md-flex justify-content-md-start">
                         <a href="mailto:gutshof-bauer@online.de?subject=Ferienwohnung „Lieblingsort“ buchen">
-                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                            <button type="button" class="custom-btn-open px-4 me-md-2">
                                 Jetzt buchen
                             </button>
                         </a>
                         <a href="pages/ferienwohnungen/lieblingsort.html">
-                            <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                            <button type="button" class="custom-btn-invert px-4">
                                 Mehr Informationen
                             </button>
                         </a>
@@ -333,8 +341,12 @@
     <aside class="punny-doppelzimmer position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
         <div class="col-md-5 p-lg-5 mx-auto my-5">
             <h4 class="display-4 fw-normal">Oder doch ein Doppelzimmer?</h4>
-            <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-            <a class="btn btn-lg btn-outline-secondary" href="pages/doppelzimmer/schlafgut.html">Zu den Doppelzimmer</a>
+            <p class="fs-5">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+            <a class="" href="pages/doppelzimmer/schlafgut.html">
+                <button class="custom-btn-open">
+                    Zu den Doppelzimmer
+                </button>
+            </a>
         </div>
         <div class="product-device shadow-sm d-none d-md-block"></div>
         <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
@@ -367,7 +379,7 @@
                                 /2 Personen
                             </small>
                         </h5>
-                        <ul class="lead list-unstyled mt-3 mb-4">
+                        <ul class="fs-5 list-unstyled mt-3 mb-4">
                             <li class="card-plans-separator">
                                 <figure>
                                     <ion-icon size="" class="pricelist-icon" name="bed-outline"></ion-icon>
@@ -387,7 +399,7 @@
                             </li>
                         </ul>
                         <a href="mailto:gutshof-bauer@online.de?subject=Angebot &quot;Pfälzer Land&quot;">
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                            <button type="button" class="w-100 custom-btn">
                                 Termin vereinbaren
                             </button>
                         </a>
@@ -408,7 +420,7 @@
                                 /2 Personen
                             </small>
                         </h5>
-                        <ul class="lead list-unstyled mt-3 mb-4">
+                        <ul class="fs-5 list-unstyled mt-3 mb-4">
                             <li class="card-plans-separator">
                                 <figure>
                                     <ion-icon size="" class="pricelist-icon" name="bed-outline"></ion-icon>
@@ -450,7 +462,7 @@
                                 /4 Personen
                             </small>
                         </h5>
-                        <ul class="lead list-unstyled mt-3 mb-4">
+                        <ul class="fs-5 list-unstyled mt-3 mb-4">
                             <li class="card-plans-separator">
                                 <figure>
                                     <ion-icon size="" class="pricelist-icon" name="bed-outline"></ion-icon>
@@ -470,7 +482,7 @@
                             </li>
                         </ul>
                         <a href="mailto:gutshof-bauer@online.de?subject=Angebot &quot;verlängertes Mädelswochenende&quot;">
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">
+                            <button type="button" class="w-100 custom-btn">
                                 Termin vereinbaren
                             </button>
                         </a>
@@ -488,7 +500,7 @@
                 "Ihr werdet euch in den Träume-Bauer verlieben"!
             </h4>
             <div class="col mx-auto">
-                <p class="lead mb-4">
+                <p class="fs-5 mb-4">
                     ( ❤ ) lich Willkommen im Träume-Bauer Wir, Carina & Markus, sind Gastgeber aus Leidenschaft! Markus, Metzgermeister mit eigener Landmetzgerei in Hertlingshausen, verschlug es nach
                     Venningen wegen der Liebe bzw.mir ☺ Wir haben das Grundstück mit Haus im Januar 2019 gekauft und gleich angefangen zu sanieren und umzubauen. Unser Traum war es ein Kleinod für
                     Gäste zu schaffen… ganz nach unseren Vorstellungen. Der Träume Bauer ist unser Baby und wir hoffen, Ihr verliebt Euch in diesen wie wir! Als Geschäftsführerin vom Gutshof Bauers
@@ -496,10 +508,10 @@
                     anstecken.
                 </p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
+                    <button type="button" class="custom-btn-open px-4 me-sm-3">
                         Zu den Appartements
                     </button>
-                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">
+                    <button type="button" class="custom-btn-invert btn-lg px-4">
                         Oder doch Doppelzimmer?
                     </button>
                 </div>
@@ -515,24 +527,6 @@
 
     <!-- Google Reviews -->
     <!-- Google Reviews-End -->
-
-    <!-- Punny Doppelzimmer -->
-    <aside class="punny-hero position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
-        <div class="col-md-5 p-lg-5 mx-auto my-5">
-            <h4 class="display-4 fw-normal">Doppelzimmer gefällig?</h4>
-            <p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
-            <a class="btn btn-outline-secondary" href="pages/doppelzimmer/schlafgut.html">Zu den Doppelzimmer</a>
-        </div>
-        <div class="product-device shadow-sm d-none d-md-block"></div>
-        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-        <div class="transparent-grapes-left">
-            <img class="w-25" src="resources/img/edit/light-grapes.png" alt="">
-        </div>
-        <div class="transparent-grapes-right">
-            <img class="w-25" src="resources/img/edit/transparent-grapes.png" alt="">
-        </div>
-    </aside>
-    <!-- Punny Doppelzimmer-End -->
 
     <!-- Partner Logos -->
     <aside class="container mt-5">
@@ -668,7 +662,7 @@
             <section class="mb-5">
                 <div class="row d-flex justify-content-center">
                     <div class="col-lg-8">
-                        <p>
+                        <p class="text-white">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
                             distinctio earum repellat quaerat voluptatibus placeat nam,
                             commodi optio pariatur est quia magnam eum harum corrupti

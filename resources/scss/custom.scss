@@ -15,5 +15,9 @@ $font-size-base: 1rem;
 $lead-font-size: $font-size-base * 1.20;
 $lead-font-weight: 300;
 
+// Cards Prices
+$card-border-width: 0.15rem;
+$card-border-color: rgb(129, 129, 129); 
+
 // Import Bootstrap
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

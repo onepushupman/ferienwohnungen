@@ -339,6 +339,7 @@ ion-icon:hover {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: -2; 
   background-image: url(resources/img/7.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -441,15 +442,15 @@ ion-icon:hover {
 }
 
 .kontakt-link {
-  color: rgb(59, 59, 59);
+  color: #3b3b3b;
 }
 
 .kontakt-link:hover {
-  border-bottom: 2.5px solid rgb(110, 110, 110);
+  border-bottom: 2.5px solid #6e6e6e;
 }
 
 .kontakt-link:active {
-  border-bottom: 2.5px solid rgb(110, 110, 110);
+  border-bottom: 2.5px solid #6e6e6e;
 }
 
 /* Kontakt-End */

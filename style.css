@@ -324,6 +324,24 @@ ion-icon:hover {
   position: relative;
 }
 
+.footer-text {
+  color: #f8f8f8; 
+}
+
+.footer-icons {
+  color: #f8f8f8; 
+}
+
+.footer-link {
+  color: #f8f8f8; 
+}
+
+.footer-link:hover, 
+.footer-link:active {
+  border-bottom: 2px solid white;
+  color: #ffffff;
+}
+
 /* Footer-End */
 /* ===========================================================================*/
 /* Ferienwohnungen */

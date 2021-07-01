@@ -380,12 +380,12 @@ ion-icon:hover {
 /* Footer-End */
 /* ===========================================================================*/
 /* Ferienwohnungen */
-.zimmer-cover-dark {
+.lieblingsort-cover-dark {
   position: relative;
   height: 65em;
 }
 
-.zimmer-cover-dark::before {
+.lieblingsort-cover-dark::before {
   content: "";
   position: absolute;
   top: 0;
@@ -393,13 +393,37 @@ ion-icon:hover {
   width: 100%;
   height: 100%;
   z-index: -2;
-  background-image: url(resources/img/7.jpeg);
+  background-image: url(resources/img/ferienwohnung/compressed/lieblingsplatz-panorama.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-filter: brightness(35%);
 }
 
-.zimmer-cover-inside {
+.lieblingsort-cover-inside {
+  position: relative;
+  padding-top: 18em;
+}
+
+.zweiteheimat-cover-dark {
+  position: relative;
+  height: 65em;
+}
+
+.zweiteheimat-cover-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url(resources/img/ferienwohnung/compressed/lieblingsplatz-küche-horizontal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(35%);
+}
+
+.zweiteheimat-cover-inside {
   position: relative;
   padding-top: 18em;
 }
@@ -598,12 +622,22 @@ ion-icon:hover {
     margin: 0;
   }
 
-  .zimmer-cover-dark {
+  .lieblingsort-cover-dark {
     position: relative;
     height: 45em;
   }
 
-  .zimmer-cover-inside {
+  .lieblingsort-cover-inside {
+    margin: 0;
+    padding-top: 10rem;
+  }
+
+  .zweiteheimat-cover-dark {
+    position: relative;
+    height: 45em;
+  }
+
+  .zweiteheimat-cover-inside {
     margin: 0;
     padding-top: 10rem;
   }
@@ -613,7 +647,7 @@ ion-icon:hover {
     font-size: 7em;
   }
 
-  /* Ferienwohnungen & Zimmer-End */
+  /* Ferienwohnungen & lieblingsort-End */
 
   /* Kontakt */
   .kontakt-cover-dark {
@@ -683,12 +717,22 @@ ion-icon:hover {
     margin: 0;
   }
 
-  .zimmer-cover-dark {
+  .lieblingsort-cover-dark {
     position: relative;
     height: 40em;
   }
 
-  .zimmer-cover-inside {
+  .lieblingsort-cover-inside {
+    margin: 0;
+    padding-top: 6rem;
+  }
+
+  .zweiteheimat-cover-dark {
+    position: relative;
+    height: 40em;
+  }
+
+  .zweiteheimat-cover-inside {
     margin: 0;
     padding-top: 6rem;
   }
@@ -698,7 +742,7 @@ ion-icon:hover {
     font-size: 6em;
   }
 
-  /* Ferienwohnungen & Zimmer-End */
+  /* Ferienwohnungen & lieblingsort-End */
 
   /* Kontakt */
   .kontakt-cover-dark {
@@ -762,12 +806,22 @@ ion-icon:hover {
   /* Cover-End */
 
   /* Ferienwohnungen */
-  .zimmer-cover-dark {
+  .lieblingsort-cover-dark {
     position: relative;
     height: 35em;
   }
 
-  .zimmer-cover-inside {
+  .lieblingsort-cover-inside {
+    margin: 0;
+    padding-top: 5rem;
+  }
+
+  .zweiteheimat-cover-dark {
+    position: relative;
+    height: 35em;
+  }
+
+  .zweiteheimat-cover-inside {
     margin: 0;
     padding-top: 5rem;
   }
@@ -843,12 +897,22 @@ ion-icon:hover {
   /* Cover-End */
 
   /* Ferienwohnungen */
-  .zimmer-cover-dark {
+  .lieblingsort-cover-dark {
     position: relative;
     height: 35em;
   }
 
-  .zimmer-cover-inside {
+  .lieblingsort-cover-inside {
+    margin: 0;
+    padding-top: 5rem;
+  }
+
+  .zweiteheimat-cover-dark {
+    position: relative;
+    height: 35em;
+  }
+
+  .zweiteheimat-cover-inside {
     margin: 0;
     padding-top: 5rem;
   }
@@ -926,12 +990,22 @@ ion-icon:hover {
   /* Cover-End */
 
   /* Ferienwohnungen */
-  .zimmer-cover-dark {
+  .lieblingsort-cover-dark {
     position: relative;
     height: 35em;
   }
 
-  .zimmer-cover-inside {
+  .lieblingsort-cover-inside {
+    margin: 0;
+    padding-top: 3rem;
+  }
+
+  .zweiteheimat-cover-dark {
+    position: relative;
+    height: 35em;
+  }
+
+  .zweiteheimat-cover-inside {
     margin: 0;
     padding-top: 3rem;
   }

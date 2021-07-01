@@ -43,47 +43,25 @@
                             Home
                         </a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ferienwohnungen
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ferienwohnungen/lieblingsort.html">
+                            Lieblingsort
                         </a>
-                        <ul class="dropdown-menu text-primary" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="pages/ferienwohnungen/lieblingsort.html">
-                                    Lieblingsort
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="pages/ferienwohnungen/zweiteheimat.html">
-                                    Zweite Heimat
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Doppelzimmer
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li>
-                                <a class="dropdown-item" href="pages/doppelzimmer/schlafgut.html">
-                                    Schlafgut
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="pages/doppelzimmer/träumsüß.html">
-                                    Träumsüß
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="pages/kontakt/kontakt.html">
+                        <a class="nav-link" href="pages/ferienwohnungen/zweiteheimat.html">
+                            Zweite Heimat
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/kontakt/kontakt.html">
                             Kontakt
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-primary" href="pages/ausflüge/ausflüge.html">
+                        <a class="nav-link" href="pages/ausflüge/ausflüge.html">
                             Ausflüge
                         </a>
                     </li>
@@ -165,10 +143,11 @@
         <div class="container col-xxl-8 px-4 py-5 zweiteheimat-ferienwohnung-container">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="resources/img/7.jpeg" class="d-block mx-lg-auto img-fluid shadow-lg img-fluid border rounded-3 mb-4" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    <img src="resources/img/ferienwohnung/compressed/garten-horizontal-blick-auf-sauna.jpg" class="d-block mx-lg-auto img-fluid shadow-lg img-fluid border rounded-3 mb-4"
+                        alt="Bootstrap Themes" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold lh-1 mb-3 cover-page-marker">
+                    <h2 class="display-5 fw-bold lh-1 mb-3 cover-page-marker" id="ferienwohnung-zweite-heimat">
                         Ferienwohnung „Zweite Heimat“
                         <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
                             <defs>
@@ -330,7 +309,8 @@
                     </div>
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="resources/img/7.jpeg" class="d-block mx-lg-auto img-fluid shadow-lg img-fluid border rounded-3 mb-4" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+                    <img src="resources/img/ferienwohnung/compressed/zimmer-panorama.jpg" class="d-block mx-lg-auto img-fluid shadow-lg img-fluid border rounded-3 mb-4" alt="Bootstrap Themes"
+                        width="700" height="500" loading="lazy">
                 </div>
             </div>
         </div>
@@ -444,7 +424,7 @@
                                 <figure>
                                     <ion-icon size="" class="pricelist-icon" name="bed-outline"></ion-icon>
                                 </figure>
-                                3x Übernachtung im Doppelzimmer
+                                3x Übernachtungen in der Ferienwohnung
                             </li>
                             <li class="card-plans-separator">
                                 <figure>
@@ -512,12 +492,16 @@
                     anstecken.
                 </p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-                    <button type="button" class="custom-btn-open px-4 me-sm-3">
-                        Zu den Appartements
-                    </button>
-                    <button type="button" class="custom-btn-invert btn-lg px-4">
-                        Oder noch fragen?
-                    </button>
+                    <a href="#ferienwohnung-zweite-heimat">
+                        <button type="button" class="custom-btn-open px-4 me-sm-3">
+                            Zu den Appartements
+                        </button>
+                    </a>
+                    <a href="mailto:gutshof-bauer@online.de">
+                        <button type="button" class="custom-btn-invert px-4">
+                            Oder noch fragen?
+                        </button>
+                    </a>
                 </div>
             </div>
             <div class="overflow-hidden" style="max-height: 50vh;">

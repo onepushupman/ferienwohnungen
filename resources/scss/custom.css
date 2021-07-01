@@ -48,7 +48,7 @@ body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -2148,7 +2148,7 @@ progress {
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -2314,7 +2314,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.375rem 2.25rem 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   background-color: #fff;
@@ -2622,7 +2622,7 @@ textarea.form-control-lg {
   align-items: center;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   text-align: center;
@@ -2851,7 +2851,7 @@ textarea.form-control-lg {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: #212529;
   text-align: center;
@@ -3324,7 +3324,7 @@ textarea.form-control-lg {
 }
 
 .btn-link {
-  font-weight: 400;
+  font-weight: 500;
   color: #8fa996;
   text-decoration: underline;
 }
@@ -3609,7 +3609,7 @@ textarea.form-control-lg {
   width: 100%;
   padding: 0.25rem 1rem;
   clear: both;
-  font-weight: 400;
+  font-weight: 500;
   color: #212529;
   text-align: inherit;
   text-decoration: none;
@@ -5436,7 +5436,7 @@ textarea.form-control-lg {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -5538,7 +5538,7 @@ textarea.form-control-lg {
   max-width: 276px;
   font-family: var(--bs-font-sans-serif);
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   text-align: left;
   text-align: start;
@@ -7158,7 +7158,7 @@ textarea.form-control-lg {
 }
 
 .fw-normal {
-  font-weight: 400 !important;
+  font-weight: 500 !important;
 }
 
 .fw-bold {

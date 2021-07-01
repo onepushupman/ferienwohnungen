@@ -215,6 +215,20 @@ ion-icon:hover {
   padding-left: 12rem;
 }
 
+.nav-item {
+  letter-spacing: .05rem;
+  padding-left: .2rem; 
+  padding-right: .2rem; 
+}
+
+.nav-link { 
+  color: #181a1bf5; 
+}
+
+.nav-link:hover {
+  background-color: #eeeeee;
+}
+
 /* Navigation-End */
 /* ===========================================================================*/
 

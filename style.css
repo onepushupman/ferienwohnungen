@@ -272,6 +272,7 @@ ion-icon:hover {
 }
 
 .card {
+  border: 0.15rem solid #818181;
   transition: all 0.2s ease-in-out;
 }
 
@@ -282,7 +283,6 @@ ion-icon:hover {
 .pricelist-icon {
   font-size: 40px;
 }
-
 /* Price Cards-End */
 /* ===========================================================================*/
 

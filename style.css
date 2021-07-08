@@ -53,6 +53,12 @@ p {
   color: #181a1bf5;
 }
 
+span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #181a1bf5;
+}
+
 ul {
   font-family: "Roboto", sans-serif;
   font-weight: 400;

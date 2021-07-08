@@ -286,6 +286,10 @@ ion-icon:hover {
   transform: scale(1.05);
 }
 
+.card-appartement {
+  border: none; /* removes grey border which is needed on the home page price tables */
+}
+
 .pricelist-icon {
   font-size: 40px;
 }

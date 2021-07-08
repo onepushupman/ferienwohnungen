@@ -137,6 +137,10 @@ button.custom-btn-invert:hover::after {
   box-shadow: none;
 }
 
+button.navbar-btn::after {
+  content: none; 
+}
+
 /* Inverted Button-End */
 
 .b-divider {
@@ -547,6 +551,28 @@ ion-icon:hover {
 }
 
 /* Kontakt-End */
+
+/* Impressum */
+
+.impressum-heading  {
+  margin-top: 3rem;
+}
+
+.impressum-link {
+  color: #3b3b3b;
+}
+
+.impressum-link:hover {
+  border-bottom: 2.5px solid #6e6e6e;
+  color: #3b3b3b;
+
+}
+
+.impressum-link:active {
+  border-bottom: 2.5px solid #6e6e6e;
+}
+
+/* Impressum-End */
 
 /* ===========================================================================*/
 /* Media Queries */

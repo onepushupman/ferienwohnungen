@@ -71,7 +71,7 @@ button {
   outline: 0;
   padding: 1rem 4rem;
   font-size: 1.25rem;
-  letter-spacing: 0.00rem;
+  letter-spacing: 0rem;
   background-color: white;
   border-radius: 0.35rem;
   position: relative;
@@ -129,7 +129,6 @@ button.custom-btn-invert::after {
 
 button.custom-btn-invert:hover {
   background-color: #8fa996;
-
 }
 
 button.custom-btn-invert:hover::after {
@@ -138,7 +137,7 @@ button.custom-btn-invert:hover::after {
 }
 
 button.navbar-btn::after {
-  content: none; 
+  content: none;
 }
 
 /* Inverted Button-End */
@@ -148,8 +147,7 @@ button.navbar-btn::after {
   background-color: #0000001a;
   border: solid #00000026;
   border-width: 1px 0;
-  box-shadow: inset 0 0.5em 1.5em #0000001a,
-    inset 0 0.125em 0.5em #00000026;
+  box-shadow: inset 0 0.5em 1.5em #0000001a, inset 0 0.125em 0.5em #00000026;
 }
 
 .cover-page-marker {
@@ -226,13 +224,13 @@ ion-icon:hover {
 }
 
 .nav-item {
-  letter-spacing: .05rem;
-  padding-left: .2rem; 
-  padding-right: .2rem; 
+  letter-spacing: 0.05rem;
+  padding-left: 0.2rem;
+  padding-right: 0.2rem;
 }
 
-.nav-link { 
-  color: #181a1bf5; 
+.nav-link {
+  color: #181a1bf5;
 }
 
 .nav-link:hover {
@@ -246,7 +244,7 @@ ion-icon:hover {
 /* Cover */
 .block-cover {
   position: relative;
-  border: .2rem solid #3d3d3d;
+  border: 0.2rem solid #3d3d3d;
   bottom: 10rem;
   background-color: white;
   z-index: 10;
@@ -391,6 +389,10 @@ ion-icon:hover {
   right: 0;
 }
 
+.footer-link-container {
+  margin-top: 0rem;
+}
+
 /* Footer-End */
 /* ===========================================================================*/
 /* Ferienwohnungen */
@@ -508,7 +510,7 @@ ion-icon:hover {
 }
 
 .doktorenhof-container {
-  z-index: 2; 
+  z-index: 2;
 }
 
 /* Ausflüge-End */
@@ -554,7 +556,7 @@ ion-icon:hover {
 
 /* Impressum */
 
-.impressum-heading  {
+.impressum-heading {
   margin-top: 3rem;
 }
 
@@ -565,7 +567,6 @@ ion-icon:hover {
 .impressum-link:hover {
   border-bottom: 2.5px solid #6e6e6e;
   color: #3b3b3b;
-
 }
 
 .impressum-link:active {
@@ -574,7 +575,6 @@ ion-icon:hover {
 
 .quellen-link {
   color: #3b3b3b;
-
 }
 
 /* Impressum-End */
@@ -583,7 +583,6 @@ ion-icon:hover {
 /* Media Queries */
 /* Extra large devices (super large laptops and desktops, 1399px and down) */
 @media screen and (max-width: 1399px) {
-
   /* Navigation */
   .nav {
     padding-left: 6.93rem;
@@ -622,7 +621,6 @@ ion-icon:hover {
 
 /* Extra large devices (large laptops and desktops, 1200px and down) */
 @media screen and (max-width: 1200px) {
-
   /* Navigation */
   .nav {
     padding-left: 1.93rem;
@@ -717,7 +715,6 @@ ion-icon:hover {
 
 /* Large devices (laptops/desktops, 992px and down) */
 @media screen and (max-width: 992px) {
-
   /* Navigation */
   .nav {
     padding-left: 0rem;
@@ -806,13 +803,15 @@ ion-icon:hover {
   .ausflüge-cover-inside {
     padding-top: 6rem;
   }
-
   /* Ausflüge-End */
+
+  .footer-link-container {
+    margin-top: 1rem;
+  }
 }
 
 /* small devices (phones, 767px and down) */
 @media screen and (max-width: 767px) {
-
   /* Navigation */
   .nav {
     padding-left: 0rem;
@@ -901,7 +900,6 @@ ion-icon:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
-
   /* Navigation */
   .nav {
     padding-left: 0rem;
@@ -994,7 +992,6 @@ ion-icon:hover {
 
 /* Extra small devices (phones, 406px and down) */
 @media screen and (max-width: 406px) {
-
   /* Navigation */
   .nav {
     padding-left: 0rem;

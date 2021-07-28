@@ -293,12 +293,14 @@ ion-icon:hover {
 }
 
 .card-appartement {
-  border: none; /* removes grey border which is needed on the home page price tables */
+  border: none;
+  /* removes grey border which is needed on the home page price tables */
 }
 
 .pricelist-icon {
   font-size: 40px;
 }
+
 /* Price Cards-End */
 /* ===========================================================================*/
 
@@ -583,15 +585,47 @@ ion-icon:hover {
 
 /* Impressum-End */
 
-
-.logo-container {
-
-}
+.logo-container {}
 
 /* ===========================================================================*/
 /* Media Queries */
+
+/* Super large devices (large laptops and desktops, 1810px and down) */
+@media screen and (max-width: 1810px) {
+
+  /* Cover */
+  .block-cover {
+    position: relative;
+    border: 0.2rem solid #3d3d3d;
+    bottom: 7rem;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover-heading {
+    font-family: Amithen;
+    font-size: 6rem;
+    margin-top: 3rem;
+  }
+
+  .cover-subheading {
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    font-weight: 100;
+    font-family: "Khand", sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Cover-End */
+}
+
 /* Extra large devices (super large laptops and desktops, 1399px and down) */
 @media screen and (max-width: 1399px) {
+
   /* Navigation */
   .nav {
     padding-left: 6.93rem;
@@ -600,29 +634,30 @@ ion-icon:hover {
   /* Navigation-End */
 
   /* Cover */
-  .block_cover {
+  .block-cover {
     position: relative;
-    bottom: 7.5rem;
-    margin-right: 1.2rem;
-    margin-left: 1.2rem;
-    background-color: white;
-    border: 1.95rem solid white;
-    z-index: 5;
-  }
-
-  .cover_heading {
-    font-family: Amithen;
-    font-size: 6.55rem;
+    border: 0.2rem solid #3d3d3d;
+    bottom: 6rem;
+    width: 85%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     z-index: 10;
   }
 
-  .cover_subheading {
-    font-weight: 100;
-    font-size: 1.4rem;
+  .cover-heading {
+    font-family: Amithen;
+    font-size: 5rem;
+    margin-top: 3rem;
+  }
+
+  .cover-subheading {
     text-transform: uppercase;
-    letter-spacing: 0.45rem;
-    background-color: white;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    font-family: "Khand", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
   }
 
   /* Cover-End */
@@ -630,6 +665,7 @@ ion-icon:hover {
 
 /* Extra large devices (large laptops and desktops, 1200px and down) */
 @media screen and (max-width: 1200px) {
+
   /* Navigation */
   .nav {
     padding-left: 1.93rem;
@@ -638,29 +674,30 @@ ion-icon:hover {
   /* Navigation-End */
 
   /* Cover */
-  .block_cover {
+  .block-cover {
     position: relative;
-    bottom: 5.5rem;
-    margin-right: 1.2rem;
-    margin-left: 1.2rem;
-    background-color: white;
-    border: 1.95rem solid white;
-    z-index: 5;
-  }
-
-  .cover_heading {
-    font-family: Amithen;
-    font-size: 6.55rem;
+    border: 0.2rem solid #3d3d3d;
+    bottom: 4rem;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     z-index: 10;
   }
 
-  .cover_subheading {
-    font-weight: 100;
-    font-size: 1.4rem;
+  .cover-heading {
+    font-family: Amithen;
+    font-size: 4rem;
+    margin-top: 3rem;
+  }
+
+  .cover-subheading {
     text-transform: uppercase;
-    letter-spacing: 0.45rem;
-    background-color: white;
+    letter-spacing: 0.5rem;
+    font-weight: 100;
+    font-family: "Khand", sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
   }
 
   /* Cover-End */
@@ -724,6 +761,7 @@ ion-icon:hover {
 
 /* Large devices (laptops/desktops, 992px and down) */
 @media screen and (max-width: 992px) {
+
   /* Navigation */
   .nav {
     padding-left: 0rem;
@@ -732,31 +770,31 @@ ion-icon:hover {
   /* Navigation-End */
 
   /* Cover */
-  .block_cover {
+  .block-cover {
     position: relative;
-    bottom: 5.5rem;
-    margin-right: 0.2rem;
-    margin-left: 0.2rem;
-    background-color: white;
-    border: 1.95rem solid white;
-    z-index: 5;
-  }
-
-  .cover_heading {
-    font-family: Amithen;
-    font-size: 5.55rem;
+    border: 0.2rem solid #3d3d3d;
+    bottom: 3rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     z-index: 10;
   }
 
-  .cover_subheading {
-    font-weight: 100;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    background-color: white;
+  .cover-heading {
+    font-family: Amithen;
+    font-size: 3.2rem;
+    margin-top: 2.2rem;
   }
 
+  .cover-subheading {
+    text-transform: uppercase;
+    letter-spacing: 0.35rem;
+    font-weight: 100;
+    font-family: "Khand", sans-serif;
+    font-size: 1.2rem;
+    margin-bottom: 2.2rem;
+  }
   /* Cover-End */
 
   /* Ferienwohnungen & Zimmer */
@@ -812,6 +850,7 @@ ion-icon:hover {
   .ausflüge-cover-inside {
     padding-top: 6rem;
   }
+
   /* Ausflüge-End */
 
   .footer-link-container {
@@ -821,6 +860,7 @@ ion-icon:hover {
 
 /* small devices (phones, 767px and down) */
 @media screen and (max-width: 767px) {
+
   /* Navigation */
   .nav {
     padding-left: 0rem;
@@ -829,29 +869,31 @@ ion-icon:hover {
   /* Navigation-End */
 
   /* Cover */
-  .block_cover {
+  .block-cover {
     position: relative;
-    bottom: 5.5rem;
-    background-color: white;
-    border: 1.95rem solid white;
-    z-index: 5;
-  }
-
-  .cover_heading {
-    font-family: Amithen;
-    font-size: 4.55rem;
+    border: 0.2rem solid #3d3d3d;
+    bottom: 2rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     z-index: 10;
   }
 
-  .cover_subheading {
-    font-weight: 100;
-    font-size: 1.3rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-    background-color: white;
+  .cover-heading {
+    font-family: Amithen;
+    font-size: 3rem;
+    margin-top: 2rem;
   }
 
+  .cover-subheading {
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: 100;
+    font-family: "Khand", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
   /* Cover-End */
 
   /* Ferienwohnungen */
@@ -909,6 +951,7 @@ ion-icon:hover {
 
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
+
   /* Navigation */
   .nav {
     padding-left: 0rem;
@@ -917,32 +960,37 @@ ion-icon:hover {
   /* Navigation-End */
 
   /* Cover */
-  .block_cover {
+  .block-cover {
     position: relative;
-    bottom: 2rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    background-color: white;
-    border: 1.95rem solid white;
-    z-index: 5;
-  }
-
-  .cover_heading {
-    font-family: Amithen;
-    font-size: 3rem;
+    border: 0.2rem solid #3d3d3d;
+    bottom: 1rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     z-index: 10;
   }
 
-  .cover_subheading {
-    font-weight: 100;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    background-color: white;
+  .cover-heading {
+    font-family: Amithen;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
   }
 
+  .cover-subheading {
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: 100;
+    font-family: "Khand", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
   /* Cover-End */
+
+  .cover-page-lieblingsort-container {
+    margin-top: -6rem;
+    margin-bottom: -3rem;  
+  }
 
   /* Ferienwohnungen */
   .lieblingsort-cover-dark {
@@ -1001,6 +1049,7 @@ ion-icon:hover {
 
 /* Extra small devices (phones, 406px and down) */
 @media screen and (max-width: 406px) {
+
   /* Navigation */
   .nav {
     padding-left: 0rem;
@@ -1009,32 +1058,50 @@ ion-icon:hover {
   /* Navigation-End */
 
   /* Cover */
-  .block_cover {
+  .block-cover {
     position: relative;
-    bottom: 2rem;
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-    background-color: white;
-    border: 1.95rem solid white;
-    z-index: 5;
-  }
-
-  .cover_heading {
-    font-family: Amithen;
-    font-size: 3rem;
+    border: 0.2rem solid #3d3d3d;
+    bottom: 1rem;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: white;
     z-index: 10;
   }
 
-  .cover_subheading {
-    font-weight: 100;
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    background-color: white;
+  .cover-heading {
+    font-family: Amithen;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
   }
 
+  .cover-subheading {
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: 100;
+    font-family: "Khand", sans-serif;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+  }
   /* Cover-End */
+
+  .cover-page-zweite-heimat-container {
+    margin-top: 2rem;
+    margin-bottom: -2rem;  
+  }
+
+  .cover-page-zweite-heimat {
+    display: none;
+  }
+
+  .cover-page-lieblingsort-container {
+    margin-top: -6rem;
+    margin-bottom: -3rem;  
+  }
+
+  .cover-page-lieblingsort {
+    display: none;
+  }
 
   /* Ferienwohnungen */
   .lieblingsort-cover-dark {

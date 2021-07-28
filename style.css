@@ -585,8 +585,6 @@ ion-icon:hover {
 
 /* Impressum-End */
 
-.logo-container {}
-
 /* ===========================================================================*/
 /* Media Queries */
 
@@ -757,6 +755,11 @@ ion-icon:hover {
   }
 
   /* Ausflüge-End */
+
+  .diejungesuedpfalz-partner {
+    margin-top: 1.75rem; 
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and down) */
@@ -856,6 +859,11 @@ ion-icon:hover {
   .footer-link-container {
     margin-top: 1rem;
   }
+
+  .elsässer-käselädl-partner {
+    margin-top: 1rem; 
+  }
+  
 }
 
 /* small devices (phones, 767px and down) */
@@ -947,6 +955,9 @@ ion-icon:hover {
   }
 
   /* Ausflüge-End */
+  .elsässer-käselädl-partner {
+    margin-top: 2rem; 
+  }
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -986,6 +997,10 @@ ion-icon:hover {
     margin-bottom: 1.5rem;
   }
   /* Cover-End */
+
+  .cover-page-zweite-heimat-container {
+    margin-top: 1.75rem;
+  }
 
   .cover-page-lieblingsort-container {
     margin-top: -6rem;
@@ -1045,6 +1060,10 @@ ion-icon:hover {
   }
 
   /* Ausflüge-End */
+
+  .elsässer-käselädl-partner {
+    margin-right: 2.3rem; 
+  }
 }
 
 /* Extra small devices (phones, 406px and down) */
@@ -1156,6 +1175,10 @@ ion-icon:hover {
   }
 
   /* Ausflüge-End */
+  .elsässer-käselädl-partner {
+    margin-right: 2.8rem;
+    width: 78%; 
+  }
 }
 
 /* Media Queries-End */

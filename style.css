@@ -1019,6 +1019,10 @@ ion-icon:hover {
     padding-top: 5rem;
   }
 
+  .cover-picture-beschreibung {
+    font-size: 1.15rem !important; 
+  }
+  
   .zweiteheimat-cover-dark {
     position: relative;
     height: 35em;

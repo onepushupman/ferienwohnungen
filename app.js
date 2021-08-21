@@ -69,6 +69,7 @@ $(document).ready(function () {
     onBeforeNextSlide: function (el) {},
     onBeforePrevSlide: function (el) {},
   });
+  AOS.init(); // initializing aos scroll
 });
 
 // jQuery lightSlider Brands

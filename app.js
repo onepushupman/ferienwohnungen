@@ -70,7 +70,7 @@ $(document).ready(function () {
     onBeforePrevSlide: function (el) {},
   });
   AOS.init({
-    disable: window.innerWidth < 1024
+    disable: window.innerWidth < 991
   }); // initializing aos scroll
 });
 

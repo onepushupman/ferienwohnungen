@@ -295,6 +295,7 @@ ion-icon:hover {
 
 .card-appartement {
   border: none;
+  object-fit: cover; 
   /* removes grey border which is needed on the home page price tables */
 }
 

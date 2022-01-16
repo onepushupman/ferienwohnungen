@@ -148,5 +148,6 @@ if (matcher.matches) {
 }
 }
 
+// init
 objectFitImages();
 // if you use jQuery, the code is: $(function () { objectFitImages() });

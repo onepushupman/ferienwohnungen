@@ -147,3 +147,6 @@ if (matcher.matches) {
   darkSchemeIcon.remove();
 }
 }
+
+objectFitImages();
+// if you use jQuery, the code is: $(function () { objectFitImages() });

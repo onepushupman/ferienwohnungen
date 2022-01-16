@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+.safari-fix {
+  object-fit: contain;
+	font-family: 'object-fit: contain;';
+}
+
 .underline {
   color: #8fa996;
   display: inline;

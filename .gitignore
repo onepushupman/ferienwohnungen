@@ -1,7 +1,7 @@
 /node_modules
 /dist
-/resources/img
-/resources/video
+/resources/src/img
+/resources/src/video
 package.json
 package-lock.json
 .parcelrc

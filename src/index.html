@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ? <meta name="description" content="This is a meta description sample. We can add up to 160 characters."> -->
+    <!-- Favicons -->
+    <link rel="icon" id="darkSchemeIcon" href="resources/img/logos/favicon-16x16-white.png">
+    <link rel="icon" id="lightSchemeIcon" href="resources/img/logos/favicon-16x16-black.png">
+    <!-- Khand font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Roboto font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Sass Bootstrap -->
+    <link href="resources/scss/custom.css" rel="stylesheet">
+    <!-- Style.css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet.js -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <!-- jQuery lightSlider -->
+    <link type="text/css" rel="stylesheet" href="../node_modules/lightslider/dist/css/lightslider.css">
+    <!-- aos -->
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
+    <!-- Cookie Consent css -->
+    <link rel="stylesheet" href="../node_modules/vanilla-cookieconsent/dist/cookieconsent.css">
+    <title>Träume-Bauer</title>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                Träume-Bauer
+            </a>
+            <button class="navbar-btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-pills navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="active nav-link text-light activeNavbarPagination" aria-current="page" href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ferienwohnungen/lieblingsort.html">
+                            Lieblingsort
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ferienwohnungen/zweiteheimat.html">
+                            Zweite Heimat
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/kontakt/kontakt.html">
+                            Kontakt
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ausflüge/ausflüge.html">
+                            Ausflüge
+                        </a>
+                    </li>
+                </ul>
+                <!-- Call -->
+                <a href="tel:+491728701127" class="text-dark me-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                </a>
+                <!-- Email -->
+                <a href="mailto:info@traeumebauer.de" class="text-dark me-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                    </svg>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/urlaubinderpfalz/" class="text-dark me-4" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/cari_nanoll/" class="text-dark" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navigation-End -->
+
+    <!-- jQuery lightSlider Cover-->
+    <aside data-aos="fade-up" class="shadow-lg">
+        <ul id="light-slider">
+            <li>
+                <img src="resources/img/ferienwohnung/compressed/willkommen-horizontal.jpg" class="d-block w-100" alt="...">
+            </li>
+            <li>
+                <img src="resources/img/ferienwohnung/compressed/haus-vertikal-blick-linksmittig.jpg" class="d-block w-100" alt="...">
+            </li>
+            <li>
+                <img src="resources/img/ferienwohnung/compressed/kaffeemaschine-horizontal.jpg" class="d-block w-100" alt="...">
+            </li>
+            <li>
+                <img src="resources/img/ferienwohnung/compressed/terasse-horizontal-skulptur.jpg" class="d-block w-100" alt="...">
+            </li>
+            <li>
+                <img src="resources/img/ferienwohnung/compressed/terasse-horizontal-bank-blumen.jpg" class="d-block w-100" alt="...">
+            </li>
+            <li>
+                <img src="resources/img/ferienwohnung/compressed/garten-horizontal.jpg" class="d-block w-100" alt="...">
+            </li>
+            ...
+        </ul>
+    </aside>
+    <!-- jQuery lightSlider Cover-End -->
+
+    <!-- Cover -->
+    <main data-aos="fade-up" class="container">
+        <div class="shadow-lg block-cover">
+            <h1 class="text-center cover-heading">
+                Träume-Bauer
+            </h1>
+            <h3 class="h2 text-center cover-subheading">
+                Traumhafte Ferienappartements
+            </h3>
+        </div>
+    </main>
+    <!-- Cover-End -->
+
+    <!-- Ferienwohnung "Zweite Heimat"  -->
+    <main data-aos="fade-up" class="cover-page-zweite-heimat-container">
+        <div class="container col-xxl-8 px-4 py-5 zweiteheimat-ferienwohnung-container">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-lg-6 cover-page-zweite-heimat">
+                    <img src="resources/img/ferienwohnung/zweite-heimat/kitchen-view.jpg" class="d-block mx-lg-auto shadow-lg img-fluid border rounded-3 mb-4" alt="zweite-heimat-ferienwohnung"
+                        width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold lh-1 mb-3 cover-page-marker" id="ferienwohnung-zweite-heimat">
+                        Ferienwohnung „Zweite Heimat“
+                        <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+                            <defs>
+                                <filter id="marker-shape">
+                                    <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+                                    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </h2>
+                    <!-- Star Icon -->
+                    <div class="mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                    </div>
+                    <!-- Person Icon -->
+                    <div class="mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                        <span class="fs-5">
+                            2 - 4 Personen Appartement
+                        </span>
+                    </div>
+                    <p class="fs-5">
+                        Genießen Sie den Aufenthalt in unserem neuen Apartmenthaus Träume-Bauer. Dieses haben wir im Januar 2019 komplett saniert und umgebaut. „Zweite Heimat“ sagt schon alles aus…
+                        Sie sollen sich wie zuhause fühlen!
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="mailto:info@traeumebauer.de?subject=Ferienwohnung „Zweite Heimat“ buchen">
+                            <button type="button" class="button custom-btn-open px-4 me-md-2">
+                                Jetzt buchen
+                            </button>
+                        </a>
+                        <a href="pages/ferienwohnungen/zweiteheimat.html">
+                            <button type="button" class="button custom-btn-invert px-4">
+                                Mehr Informationen
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Ferienwohnung "Zweite Heimat"-End  -->
+
+    <!-- Details -->
+    <main data-aos="fade-up" class="bg-light text-center position-relative overflow-hidden p-3 p-md-5 m-md-3  mb-5">
+        <div class="container">
+            <div class="row">
+                <div data-aos="fade-up" class="col-lg-4">
+                    <ion-icon name="map-outline" class="map-icon"></ion-icon>
+                    <h2 class="h1">
+                        Zentrale Lage
+                    </h2>
+                    <p class="lead">
+                        Der Träume Bauer hat eine sehr zentrale Lage. Neustadt, Landau, Speyer oder Heidelberg sind von hier gut zu erreichen.
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div data-aos="fade-up" data-aos-delay="100" class="col-lg-4">
+                    <ion-icon name="bed-outline" class="bed-icon"></ion-icon>
+                    <h2 class="h1">
+                        + zusätzliches Doppelzimmer möglich
+                    </h2>
+                    <p class="lead">
+                        Direkt neben der Ferienwohnungen befinden sich die Doppelzimmer Schlafgut / Träumsüß + Bad für 2 Personen. Dieses kann man dazu buchen
+                    </p>
+                </div><!-- /.col-lg-4 -->
+                <div data-aos="fade-up" data-aos-delay="200" class="col-lg-4">
+                    <ion-icon name="flame-outline" class="fire-icon"></ion-icon>
+                    <h2 class="h1">
+                        Fass-Sauna
+                    </h2>
+                    <p class="lead">
+                        Die Fass-Sauna ist für unseren Feriengäste inclusive ab 4 Übernachtungen.
+                    </p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div>
+    </main>
+    <!-- Details-End -->
+
+    <!-- Ferienwohnung "Lieblingsort"  -->
+    <main data-aos="fade-up" class="cover-page-lieblingsort-container">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h2 class="display-5 fw-bold lh-1 mb-3 cover-page-marker">
+                        Ferienwohnung „Lieblingsort“
+                        <svg xmlns="//www.w3.org/2000/svg" version="1.1" class="svg-filters" style="display:none;">
+                            <defs>
+                                <filter id="marker-shape">
+                                    <feTurbulence type="fractalNoise" baseFrequency="0 0.15" numOctaves="1" result="warp" />
+                                    <feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="30" in="SourceGraphic" in2="warp" />
+                                </filter>
+                            </defs>
+                        </svg>
+                    </h2>
+                    <!-- Star Icon -->
+                    <div class="mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                            <path
+                                d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288L8 2.223l1.847 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.565.565 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
+                        </svg>
+                    </div>
+                    <!-- Person Icon -->
+                    <div class="mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                        <span class="fs-5">
+                            2 - 4 Personen Appartement
+                        </span>
+                    </div>
+                    <p class="fs-5">
+                        Genießen Sie den Aufenthalt in unserem neuen Apartmenthaus Träume-Bauer. Dieses haben wir im Januar 2019 komplett saniert und umgebaut. „Lieblingsort“ sagt schon alles aus… Sie
+                        sollen sich bei uns rundum wohlfühlen! Mit schöner Terrasse und kleinem Träumegarten.
+                    </p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <a href="mailto:info@traeumebauer.de?subject=Ferienwohnung „Lieblingsort“ buchen">
+                            <button type="button" class="button custom-btn-open px-4 me-md-2">
+                                Jetzt buchen
+                            </button>
+                        </a>
+                        <a href="pages/ferienwohnungen/lieblingsort.html">
+                            <button type="button" class="button custom-btn-invert px-4">
+                                Mehr Informationen
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-10 col-lg-6 cover-page-lieblingsort">
+                    <img src="resources/img/ferienwohnung/compressed/zimmer-panorama.jpg" class="d-block mx-lg-auto img-fluid shadow-lg img-fluid border rounded-3 mb-4 " alt="Bootstrap Themes"
+                        width="700" height="500" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Ferienwohnung "Lieblingsort"-End  -->
+
+    <!-- Angebote mit Preis  -->
+    <main data-aos="fade-up" class="container mt-5">
+        <h2 class="text-center display-2 fw-bold lh-1 mb-3 mb-5">
+            Unsere Angebote zum träumen...
+        </h2>
+        <div class="row row-cols-1 row-cols-lg-3 mb-3 text-center">
+            <div data-aos="fade-up" class="col">
+                <div class="card mb-4 rounded-3 shadow">
+                    <div class="card-header py-3">
+                        <h4 class="h1 my-0">
+                            „Pfälzer Land“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="h2 card-title pricing-card-title">
+                            €435
+                            <small class="text-muted fw-light">
+                                /2 Personen
+                            </small>
+                        </h5>
+                        <ul class="fs-5 list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <figure>
+                                    <ion-icon size="" class="pricelist-icon" name="bed-outline"></ion-icon>
+                                </figure>
+                                3x Übernachtungen in der Ferienwohnung
+                            </li>
+                            <li class="card-plans-separator">
+                                <figure>
+                                    <ion-icon size="" class="pricelist-icon" name="restaurant-outline"></ion-icon>
+                                </figure> Frühstückskorb
+                            </li>
+                            <li class="card-plans-separator">
+                                <figure>
+                                    <ion-icon class="pricelist-icon" size="" name="wine-outline"></ion-icon>
+                                </figure>
+                                Weinprobe im Gutshof + Pfälzer Teller und einer Flasche Gutswein
+                            </li>
+                        </ul>
+                        <a href="mailto:info@traeumebauer.de?subject=Angebot &quot;Pfälzer Land&quot;">
+                            <button type="button" class="button w-100 custom-btn">
+                                Termin vereinbaren
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100" class="col">
+                <div class="card mb-4 rounded-3 shadow">
+                    <div class="card-header py-3">
+                        <h4 class="h1 my-0">
+                            „verlängertes Mädelswochenende“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="h2 card-title pricing-card-title">
+                            €750
+                            <small class="text-muted fw-light">
+                                /4 Personen
+                            </small>
+                        </h5>
+                        <ul class="fs-5 list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <figure>
+                                    <ion-icon size="" class="pricelist-icon" name="bed-outline"></ion-icon>
+                                </figure>
+                                4x Übernachtungen in der Ferienwohnung +
+                                Sauna-Abend mit Früchteplatte
+                            </li>
+                            <li class="card-plans-separator">
+                                <figure>
+                                    <ion-icon class="pricelist-icon" size="" name="restaurant-outline"></ion-icon>
+                                </figure>
+                                Tapas-Platte im Gutshof -viele Kleinigkeiten wie z. B. Tomaten-Mozzarella, Melone-Schinken, Ziegenkäse…
+                            </li>
+                            <li class="card-plans-separator">
+                                <figure>
+                                    <ion-icon class="pricelist-icon" size="" name="wine-outline"></ion-icon>
+                                </figure> Secco Romeo & Julia in der Ferienwohnung
+                            </li>
+                        </ul>
+                        <a href="mailto:info@traeumebauer.de?subject=Angebot &quot;verlängertes Mädelswochenende&quot;">
+                            <button type="button" class="button w-100 custom-btn">
+                                Termin vereinbaren
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200" class="col">
+                <div class="card mb-4 rounded-3 shadow">
+                    <div class="card-header py-3">
+                        <h4 class="h1 my-0">
+                            „Lieblingsmensch“
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="h2 card-title pricing-card-title">
+                            €499
+                            <small class="text-muted fw-light">
+                                /2 Personen
+                            </small>
+                        </h5>
+                        <ul class="fs-5 list-unstyled mt-3 mb-4">
+                            <li class="card-plans-separator">
+                                <figure>
+                                    <ion-icon size="" class="pricelist-icon" name="bed-outline"></ion-icon>
+                                </figure>
+                                3x Übernachtungen in der Ferienwohnung
+                            </li>
+                            <li class="card-plans-separator">
+                                <figure>
+                                    <ion-icon class="pricelist-icon" size="" name="restaurant-outline"></ion-icon>
+                                </figure>
+                                Frühstückskorb +
+                                Candle-Light-Dinner im Gutshof: 4 Gänge Menü eine Flasche Gutswein Mineralwasser + Aperitif
+                            </li>
+                            <li class="card-plans-separator">
+                                <figure>
+                                    <ion-icon class="pricelist-icon" size="" name="wine-outline"></ion-icon>
+                                </figure>
+                                1x Flasche Romeo Secco im Zimmer
+                            </li>
+                        </ul>
+                        <a href="mailto:info@traeumebauer.de?subject=Angebot &quot;Lieblingsmensch&quot;">
+                            <button type="button" class="button w-100 custom-btn">
+                                Termin vereinbaren
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Angebote mit Preis-End  -->
+
+    <!-- Punny Doppelzimmer -->
+    <aside data-aos="fade-up" class="punny-doppelzimmer position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h4 class="display-4 fw-normal">
+                Spezielles in der Nebensaison
+            </h4>
+            <p class="fs-5">
+                In der Nebensaison November bis März können die Appartements auch für 1 oder 2 Nächte gebucht werden. Jedoch kommen dann 40 Euro Endreinigungskosten hinzu.
+            </p>
+        </div>
+        <div class="product-device shadow-sm d-none d-md-block"></div>
+        <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+        <div class="transparent-grapes-left">
+            <img class="w-25" src="resources/img/edit/light-grapes.png" alt="">
+        </div>
+        <div class="transparent-grapes-right">
+            <img class="w-25" src="resources/img/edit/transparent-grapes.png" alt="">
+        </div>
+    </aside>
+    <!-- Punny Doppelzimmer-End -->
+
+    <!-- Nachricht vm Gastgeber -->
+    <main data-aos="fade-up" class="container">
+        <div class="px-4 pt-5 my-5 text-center border-bottom">
+            <h4 class="display-4 fw-bold">
+                "Ihr werdet euch in den Träume-Bauer verlieben"!
+            </h4>
+            <div class="col mx-auto">
+                <p class="fs-5 mb-4">
+                    ( ❤ ) lich Willkommen im Träume-Bauer Wir, Carina & Markus, sind Gastgeber aus Leidenschaft! Markus, Metzgermeister mit eigener Landmetzgerei in Hertlingshausen, verschlug es nach
+                    Venningen wegen der Liebe bzw.mir ☺ Wir haben das Grundstück mit Haus im Januar 2019 gekauft und gleich angefangen zu sanieren und umzubauen. Unser Traum war es ein Kleinod für
+                    Gäste zu schaffen… ganz nach unseren Vorstellungen. Der Träume Bauer ist unser Baby und wir hoffen, Ihr verliebt Euch in diesen wie wir! Als Geschäftsführerin vom Gutshof Bauers
+                    Stuben, der sich direkt neben dem Träume Bauer befindet, freue ich mich, Euch in unserm Winzerdorf Venningen willkommen zu heißen! Ich hoffe, ich kann Euch mit meiner Pfalzliebe
+                    anstecken.
+                </p>
+                <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+                    <a href="#ferienwohnung-zweite-heimat">
+                        <button type="button" class="button custom-btn-open px-4 me-sm-3">
+                            Zu den Appartements
+                        </button>
+                    </a>
+                    <a href="mailto:info@traeumebauer.de">
+                        <button type="button" class="button custom-btn-invert  px-4">
+                            Oder noch fragen?
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <div class="overflow-hidden" style="max-height: 50vh;">
+                <div class="container px-5">
+                    <img src="resources/img/carinamarkus.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Nachricht vm Gastgeber-End -->
+
+    <!-- Google Reviews -->
+    <!-- Google Reviews-End -->
+
+    <!-- Partner Logos -->
+    <aside data-aos="fade-up" class="container partner-container mt-5 text-center">
+        <h4 class="text-center display-2 fw-bold lh-1 mb-3 mb-5">
+            Unsere Partner
+        </h4>
+        <div class="row row-cols-2 row-cols-sm-4">
+            <div class="col pt-2">
+                <figure class="logo-container">
+                    <a href="https://www.deutschertourismusverband.de/" target="_blank">
+                        <img src="resources/img/logos/deutschertourismusverband.png" class="img-fluid" width="150" alt="deutscher-tourismus-verband">
+                    </a>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="logo-container">
+                    <a href="https://www.facebook.com/metzgereinoll" target="_blank">
+                        <img src="resources/img/logos/nollmetzgerei.png" class="img-fluid" width="153" alt="noll-metzgerei">
+                    </a>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="logo-container">
+                    <a href="https://doktorenhof.de" target="_blank">
+                        <img src="resources/img/logos/doktorenhof.png" class="img-fluid" width="170" alt="doktorenhof">
+                    </a>
+                </figure>
+            </div>
+            <div class="col pt-3">
+                <figure class="logo-container">
+                    <a href="https://www.pfalz.de" target="_blank">
+                        <img src="resources/img/logos/zumwohldiepfalz.jpg" class="img-fluid" width="250" alt="zum-wohl-die-pfalz">
+                    </a>
+                </figure>
+            </div>
+        </div>
+        <div class="row row-cols-2 row-cols-sm-5">
+            <div class="col pt-5">
+                <figure class="logo-container">
+                    <a href="https://www.natursteine-kohler.de" target="_blank">
+                        <img src="resources/img/logos/kohlernatursteine.PNG" class="img-fluid" width="250" alt="kohler-natursteine">
+                    </a>
+                </figure>
+            </div>
+            <div class="col pt-5">
+                <figure class="logo-container">
+                    <a href="https://www.genusstur.de" target="_blank">
+                        <img src="resources/img/logos/genusstur.jpg" class="img-fluid" width="250" alt="genusstur">
+                    </a>
+                </figure>
+            </div>
+            <div class="col ps-5">
+                <figure class="logo-container">
+                    <a href="https://www.kaeselaedel-edenkoben.de" target="_blank">
+                        <img src="resources/img/logos/elsässerkäselädl.png" class="img-fluid elsässer-käselädl-partner" width="130" alt="elsässer-käselädl">
+                    </a>
+                </figure>
+            </div>
+            <div class="col ps-5 pt-5">
+                <figure class="logo-container">
+                    <a href="https://kosmetik-venningen.de" target="_blank">
+                        <img src="resources/img/logos/ruhe-oase.png" class="img-fluid" width="150" alt="elsässer-käselädl">
+                    </a>
+                </figure>
+            </div>
+            <div class="col">
+                <figure class="logo-container">
+                    <a href="https://www.diejungesuedpfalz.de" target="_blank">
+                        <img src="resources/img/logos/diejungesüdpfalz.png" class="img-fluid diejungesuedpfalz-partner" width="250" alt="die-junge-südpfalz">
+                    </a>
+                </figure>
+            </div>
+        </div>
+    </aside>
+    <!-- Partner Logos-End -->
+
+    <!-- Footer -->
+    <footer class="footer-background text-center text-white mt-5 shadow-lg">
+        <!-- Grid container -->
+        <div class="container footer-background-inside">
+            <!-- Section: Links -->
+            <section class="mt-5">
+                <!-- Grid row-->
+                <div class="row text-center d-flex justify-content-center pt-5">
+                    <!-- Grid column -->
+                    <div class="col-lg-2">
+                        <h5 class="h4 text-white text-uppercase font-weight-bold">
+                            Ferienwohnungen
+                        </h5>
+                        <h6 class="">
+                            <a href="pages/ferienwohnungen/lieblingsort.html" class="footer-link">Lieblingsort</a>
+                        </h6>
+                        <h6 class="">
+                            <a href="pages/ferienwohnungen/zweiteheimat.html" class="footer-link">Zweite Heimat</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="footer-link-container col-lg-2">
+                        <h5 class="h4 text-white text-uppercase font-weight-bold">
+                            Kontakt
+                        </h5>
+                        <h6 class="">
+                            <a href="pages/kontakt/kontakt.html" class="footer-link">Findet uns</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="footer-link-container col-lg-2">
+                        <h5 class="h4 text-white text-uppercase font-weight-bold">
+                            Ausflüge
+                        </h5>
+                        <h6 class="">
+                            <a href="pages/ausflüge/ausflüge.html" class="footer-link">Pfälzische Ausflüge</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="footer-link-container col-lg-2">
+                        <h5 class="h4 text-white text-uppercase font-weight-bold">
+                            Rechtliches
+                        </h5>
+                        <h6 class="">
+                            <a href="pages/datenschutzerklärung/datenschutzerklärung.html" class="footer-link">Datenschutzerklärung</a>
+                        </h6>
+                        <h6 class="">
+                            <a href="pages/impressum/impressum.html" class="footer-link">Impressum</a>
+                        </h6>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row-->
+            </section>
+            <!-- Section: Links -->
+
+            <hr class="my-5" />
+
+            <!-- Section: Text -->
+            <section class="mb-5">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="footer-text">
+                            Der Träume Bauer hat eine sehr zentrale Lage. Neustadt, Landau, Speyer oder Heidelberg sind von hier gut zu erreichen! Auch für unsere Fahrradfahrer gibt es viele tolle
+                            Radwege oder auch für die Wanderfans haben wir einiges zu bieten.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Section: Text -->
+
+            <!-- Section: Social -->
+            <section class="text-center mb-5">
+                <!-- Call -->
+                <a href="tel:+491728701127" class="text-white me-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                        <path
+                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                </a>
+                <!-- Email -->
+                <a href="mailto:info@traeumebauer.de" class="text-white me-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path
+                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z" />
+                    </svg>
+                </a>
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/urlaubinderpfalz/" class="text-white me-4" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path
+                            d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg>
+                </a>
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/cari_nanoll/" class="text-white me-4" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                    </svg>
+                </a>
+            </section>
+            <!-- Section: Social -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3 footer-background-inside footer_copyright footer-text">
+            © 2021 Copyright:
+            <a class="footer-link" target="_blank" href="http://www.ferienwohnungeninderpfalz.de/">Träume-Bauer</a>
+        </div>
+        <div class="text-center p-3 footer-background-inside footer_copyright footer-text">
+            Made with <code><</code><code>/</code><code>3</code>
+            <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/aaronsamuelhauck/">Aaron-Samuel Hauck</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer-End -->
+
+    <!--====================================================================-->
+    <!-- Scripts -->
+    <!-- Leaflet.js -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <!-- <script type="text/javascript" src="leaflet.js"></script> -->
+    <!-- Bootstrap JavaScript Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <!-- Ionicons -->
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jQuery lightSlider -->
+    <script src="../node_modules/lightslider/dist/js/lightslider.js"></script>
+    <!-- aos Script -->
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <!-- Cookie Consent Script -->
+    <script src="../node_modules/vanilla-cookieconsent/dist/cookieconsent.js"></script>
+    <script defer src="cookieconsent-init.js"></script>
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="app.js"></script>
+    <!-- Scripts-End -->
+    <!-- ====================================================================-->
+</body>
+
+</html>

@@ -1,5 +1,8 @@
 /node_modules
+/dist
 /resources/img
 /resources/video
 package.json
 package-lock.json
+.parcelrc
+.parcel-cache

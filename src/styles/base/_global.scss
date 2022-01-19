@@ -1,0 +1,48 @@
+// Fonts
+$font-family-sans-serif: "Roboto", sans-serif;
+// 'Khand', sans-serif;
+
+// Colors
+$primary: #8fa996;
+$secondary: #3D4B71;
+$success: #2d5e38;
+$info: #aeeef7;
+$danger: #763e3e;
+$warning: #ffe03a;
+
+// Font Sizes
+$font-size-base: 1rem;
+$lead-font-size: $font-size-base * 1.20;
+$lead-font-weight: 300;
+
+// Font Weight
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 500;
+$font-weight-bold: 600;
+$font-weight-bolder: bolder;
+
+// Cards Prices
+//  $card-border-width: 0.15rem;
+//  $card-border-color: #818181; 
+
+// Import Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+/*
+  This mixin can be used to set the object-fit:
+  @include object-fit(contain);
+  or object-fit and object-position:
+  @include object-fit(cover, top);
+*/
+@mixin object-fit($fit: fill, $position: null){
+    -o-object-fit: $fit;
+       object-fit: $fit;
+    @if $position {
+        -o-object-position: $position;
+           object-position: $position;
+        font-family: 'object-fit: #{$fit}; object-position: #{$position}';
+    } @else {
+        font-family: 'object-fit: #{$fit}';
+    }
+  }

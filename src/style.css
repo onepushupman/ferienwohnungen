@@ -1,21 +1,3 @@
-/* Loading Font Amithen */
-@font-face {
-  font-family: Amithen;
-  src: url("resources/fonts/Amithen.otf") format("opentype");
-}
-
-/* ===========================================================================*/
-/* Components */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Khand", sans-serif;
-  color: #2f3335;
-}
-
 a {
   text-decoration: none;
 }

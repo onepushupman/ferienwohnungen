@@ -1,6 +1,8 @@
 .ausflüge-cover-dark {
+    // position: relative;
+    // height: 65em;
     position: relative;
-    height: 65em;
+    height: 35em;
   }
   
   .ausflüge-cover-dark::before {
@@ -19,91 +21,97 @@
   }
   
   .ausflüge-cover-inside {
-    position: relative;
-    padding-top: 18em;
+    // position: relative;
+    // padding-top: 18em;
+    // margin: 0;
+    padding-top: 5.89rem;
   }
   
+  .ausflugcover-picture-beschreibung-walk {
+    display: flex;
+    font-size: 1.1rem !important;
+  }
+  
+  .ausflugcover-picture-beschreibung-walk::before {
+    content: "";
+    background-image: url(../resources/svg/walk-outline.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    padding-right: 2.5rem;
+  }
+
+  .ausflugcover-picture-beschreibung-map {
+    display: flex;
+    font-size: 1.1rem !important;
+  }
+  
+  .ausflugcover-picture-beschreibung-map::before {
+    content: "";
+    background-image: url(../resources/svg/map-outline.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    padding-right: 2.5rem;
+  }
+
   .pfalz-icon {
     font-size: 50px;
   }
   
   .glass-icon {
-    font-size: 30px;
+    font-size: 25px;
   }
   
   .doktorenhof-container {
     z-index: 2;
   }
 
-  /* Extra large devices (large laptops and desktops, 1200px and down) */
-@media screen and (max-width: 1200px) {
 
 
-    /* Ausflüge */
-    .ausflüge-cover-dark {
-      position: relative;
-      height: 45em;
-    }
-  
-    .ausflüge-cover-inside {
-      padding-top: 10rem;
-    }}
-    
-    /* Large devices (laptops/desktops, 992px and down) */
-@media screen and (max-width: 992px) {
-
-
-    /* Ausflüge */
-    .ausflüge-cover-dark {
-      position: relative;
-      height: 40em;
-    }
-  
-    .ausflüge-cover-inside {
-      padding-top: 6rem;
-    }
-  
-    /* Ausflüge-End */
-}  
-
-/* small devices (phones, 767px and down) */
-@media screen and (max-width: 767px) {
-
-    /* Ausflüge */
-    .ausflüge-cover-dark {
-      position: relative;
-      height: 35em;
-    }
-  
-    .ausflüge-cover-inside {
-      padding-top: 5rem;
-    }}
-
-    /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-
-    /* Ausflüge */
-    .ausflüge-cover-dark {
-      position: relative;
-      height: 35em;
-    }
-  
-    .ausflüge-cover-inside {
-      margin: 0;
-      padding-top: 5rem;
-    }
-    /* Ausflüge-End */}
-
-    /* Extra small devices (phones, 406px and down) */
-@media screen and (max-width: 406px) {
-
-    /* Ausflüge */
-    .ausflüge-cover-dark {
-      position: relative;
-      height: 35em;
-    }
-  
-    .ausflüge-cover-inside {
-      margin: 0;
-      padding-top: 5rem;
-    }}
+  // /* Extra large devices (large laptops and desktops, 1200px and down) */
+// @media screen and (max-width: 1200px) {
+// 
+// 
+    // /* Ausflüge */
+    // .ausflüge-cover-dark {
+      // position: relative;
+      // height: 45em;
+    // }
+  // 
+    // .ausflüge-cover-inside {
+      // padding-top: 10rem;
+    // }}
+    // 
+    // /* Large devices (laptops/desktops, 992px and down) */
+// @media screen and (max-width: 992px) {
+// 
+// 
+    // /* Ausflüge */
+    // .ausflüge-cover-dark {
+      // position: relative;
+      // height: 40em;
+    // }
+  // 
+    // .ausflüge-cover-inside {
+      // padding-top: 6rem;
+    // }
+  // 
+    // /* Ausflüge-End */
+// }  
+// 
+// /* small devices (phones, 767px and down) */
+// @media screen and (max-width: 767px) {
+// 
+    // /* Ausflüge */
+    // .ausflüge-cover-dark {
+      // position: relative;
+      // height: 35em;
+    // }
+  // 
+    // .ausflüge-cover-inside {
+      // padding-top: 5rem;
+    // }
+  // }

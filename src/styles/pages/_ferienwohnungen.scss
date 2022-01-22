@@ -56,12 +56,12 @@
   padding-top: 5.89rem;
 }
 
-.cover-picture-beschreibung-person {
+.feriencover-picture-beschreibung-person {
   display: flex;
   font-size: 1.1rem !important;
 }
 
-.cover-picture-beschreibung-person::before {
+.feriencover-picture-beschreibung-person::before {
   content: "";
   background-image: url(../resources/svg/person.svg);
   background-repeat: no-repeat;
@@ -71,12 +71,12 @@
   padding-right: 2.5rem;
 }
 
-.cover-picture-beschreibung-euro {
+.feriencover-picture-beschreibung-euro {
   display: flex;
   font-size: 1.1rem !important;
 }
 
-.cover-picture-beschreibung-euro::before {
+.feriencover-picture-beschreibung-euro::before {
   content: "";
   background-image: url(../resources/svg/currency-euro.svg);
   background-repeat: no-repeat;
@@ -221,7 +221,7 @@
 // padding-top: 5rem;
 // }
 //
-// .cover-picture-beschreibung {
+// .feriencover-picture-beschreibung {
 // font-size: 1.15rem !important;
 // }
 //

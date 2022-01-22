@@ -183,6 +183,14 @@
 /* Extra small devices (phones, 600px and down) */
 @media screen and (max-width: 600px) {
   /* Cover */
+  .cover-page-zweite-heimat-container {
+    margin-top: 1.75rem;
+  }
+
+  .cover-page-lieblingsort-container {
+    margin-top: -6rem;
+    margin-bottom: -3rem;
+  }
   .block-cover {
     position: relative;
     border: 0.2rem solid #3d3d3d;
@@ -214,6 +222,23 @@
 /* Extra small devices (phones, 406px and down) */
 @media screen and (max-width: 406px) {
   /* Cover */
+  .cover-page-zweite-heimat-container {
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+  }
+
+  .cover-page-zweite-heimat {
+    display: none;
+  }
+
+  .cover-page-lieblingsort-container {
+    margin-top: -6rem;
+    margin-bottom: -3rem;
+  }
+
+  .cover-page-lieblingsort {
+    display: none;
+  }
   .block-cover {
     position: relative;
     border: 0.2rem solid #3d3d3d;

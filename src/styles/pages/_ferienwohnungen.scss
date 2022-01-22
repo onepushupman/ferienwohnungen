@@ -1,243 +1,237 @@
-
 .lieblingsort-cover-dark {
-    position: relative;
-    height: 65em;
-  }
-  
-  .lieblingsort-cover-dark::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    background-image: url(../resources/img/ferienwohnung/compressed/lieblingsplatz-panorama.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-filter: brightness(35%);
-    filter: brightness(35%);
-  }
-  
-  .lieblingsort-cover-inside {
-    position: relative;
-    padding-top: 18em;
-  }
-  
-  .zweiteheimat-cover-dark {
-    position: relative;
-    height: 65em;
-  }
-  
-  .zweiteheimat-cover-dark::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    background-image: url(../resources/img/ferienwohnung/compressed/lieblingsplatz-küche-horizontal.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-filter: brightness(35%);
-    filter: brightness(35%);
-  }
-  
-  .zweiteheimat-cover-inside {
-    position: relative;
-    padding-top: 18em;
-  }
-  
-  .brand-font {
-    font-family: Amithen;
-    font-size: 8rem;
-    @include sm {
-        font-size: 1rem;
-    }
-  }
-  
-  .brand-font-small {
-    font-family: Amithen;
-    font-size: 3rem;
-  }
-  
-  .frühstückskorb-icon {
-    font-size: 50px;
-  }
-  
-  .doktorenhof-icon {
-    font-size: 50px;
-  }
-  
-  .restaurant-icon {
-    font-size: 50px;
-  }
-  
-  .fahrrad-icon {
-    font-size: 50px;
-  }
-  
-  .hike-icon {
-    font-size: 50px;
-  }
+  // position: relative;
+  // height: 65em;
+  position: relative;
+  height: 35em;
+}
 
- 
+.lieblingsort-cover-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url(../resources/img/ferienwohnung/compressed/lieblingsplatz-panorama.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(35%);
+  filter: brightness(35%);
+}
 
-@media screen and (max-width: 1200px) {
-    /* Ferienwohnungen & Zimmer */
-     .second-row--unternehmungen {
-       margin: 0;
-     }
-   
-     .lieblingsort-cover-dark {
-       position: relative;
-       height: 45em;
-     }
-   
-     .lieblingsort-cover-inside {
-       margin: 0;
-       padding-top: 10rem;
-     }
-   
-     .zweiteheimat-cover-dark {
-       position: relative;
-       height: 45em;
-     }
-   
-     .zweiteheimat-cover-inside {
-       margin: 0;
-       padding-top: 10rem;
-     }
-    }
+.lieblingsort-cover-inside {
+  // position: relative;
+  // padding-top: 18em;
+  margin: 0;
+  padding-top: 5.89rem;
+}
 
-    /* Large devices (laptops/desktops, 992px and down) */
-@media screen and (max-width: 992px) {
+.zweiteheimat-cover-dark {
+  //position: relative;
+  //height: 65em;
+  position: relative;
+  height: 35em;
+}
 
-    /* Ferienwohnungen & Zimmer */
-    .second-row--unternehmungen {
-      margin: 0;
-    }
-  
-    .lieblingsort-cover-dark {
-      position: relative;
-      height: 40em;
-    }
-  
-    .lieblingsort-cover-inside {
-      margin: 0;
-      padding-top: 6rem;
-    }
-  
-    .zweiteheimat-cover-dark {
-      position: relative;
-      height: 40em;
-    }
-  
-    .zweiteheimat-cover-inside {
-      margin: 0;
-      padding-top: 6rem;
-    }}
+.zweiteheimat-cover-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url(../resources/img/ferienwohnung/compressed/lieblingsplatz-küche-horizontal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(35%);
+  filter: brightness(35%);
+}
 
-    /* small devices (phones, 767px and down) */
-@media screen and (max-width: 767px) {
+.zweiteheimat-cover-inside {
+  //position: relative;
+  //padding-top: 18em;
+  margin: 0;
+  padding-top: 5.89rem;
+}
 
-    /* Ferienwohnungen */
-    .lieblingsort-cover-dark {
-      position: relative;
-      height: 35em;
-    }
-  
-    .lieblingsort-cover-inside {
-      margin: 0;
-      padding-top: 5rem;
-    }
-  
-    .zweiteheimat-cover-dark {
-      position: relative;
-      height: 35em;
-    }
-  
-    .zweiteheimat-cover-inside {
-      margin: 0;
-      padding-top: 5rem;
-    }}
+.cover-picture-beschreibung-person {
+  display: flex;
+  font-size: 1.1rem !important;
+}
 
-    /* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
+.cover-picture-beschreibung-person::before {
+  content: "";
+  background-image: url(../resources/svg/person.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+  padding-right: 2.5rem;
+}
 
-    .cover-page-zweite-heimat-container {
-      margin-top: 1.75rem;
-    }
-  
-    .cover-page-lieblingsort-container {
-      margin-top: -6rem;
-      margin-bottom: -3rem;  
-    }
-  
-    /* Ferienwohnungen */
-    .lieblingsort-cover-dark {
-      position: relative;
-      height: 35em;
-    }
-  
-    .lieblingsort-cover-inside {
-      margin: 0;
-      padding-top: 5rem;
-    }
-  
-    .cover-picture-beschreibung {
-      font-size: 1.15rem !important; 
-    }
-    
-    .zweiteheimat-cover-dark {
-      position: relative;
-      height: 35em;
-    }
-  
-    .zweiteheimat-cover-inside {
-      margin: 0;
-      padding-top: 5rem;
-    }}
+.cover-picture-beschreibung-euro {
+  display: flex;
+  font-size: 1.1rem !important;
+}
 
-    /* Extra small devices (phones, 406px and down) */
-@media screen and (max-width: 406px) {
+.cover-picture-beschreibung-euro::before {
+  content: "";
+  background-image: url(../resources/svg/currency-euro.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+  padding-right: 2.5rem;
+}
 
-    .cover-page-zweite-heimat-container {
-      margin-top: 2rem;
-      margin-bottom: -2rem;  
-    }
-  
-    .cover-page-zweite-heimat {
-      display: none;
-    }
-  
-    .cover-page-lieblingsort-container {
-      margin-top: -6rem;
-      margin-bottom: -3rem;  
-    }
-  
-    .cover-page-lieblingsort {
-      display: none;
-    }
-  
-    /* Ferienwohnungen */
-    .lieblingsort-cover-dark {
-      position: relative;
-      height: 35em;
-    }
-  
-    .lieblingsort-cover-inside {
-      margin: 0;
-      padding-top: 3rem;
-    }
-  
-    .zweiteheimat-cover-dark {
-      position: relative;
-      height: 35em;
-    }
-  
-    .zweiteheimat-cover-inside {
-      margin: 0;
-      padding-top: 3rem;
-    }}  
+.brand-font {
+  font-family: Amithen;
+  font-size: 3.58rem;
+}
+
+.star-icon {
+  height: 1.2rem;
+}
+
+.person-icon {
+  height: 2rem;
+}
+
+.euro-icon {
+  height: 2rem;
+}
+
+.brand-font-small {
+  font-family: Amithen;
+  font-size: 3rem;
+}
+
+.frühstückskorb-icon {
+  font-size: 50px;
+}
+
+.doktorenhof-icon {
+  font-size: 50px;
+}
+
+.restaurant-icon {
+  font-size: 50px;
+}
+
+.fahrrad-icon {
+  font-size: 50px;
+}
+
+.hike-icon {
+  font-size: 50px;
+}
+
+//
+// @media screen and (max-width: 1200px) {
+// /* Ferienwohnungen & Zimmer */
+// .second-row--unternehmungen {
+// margin: 0;
+// }
+//
+// .lieblingsort-cover-dark {
+// position: relative;
+// height: 45em;
+// }
+//
+// .lieblingsort-cover-inside {
+// margin: 0;
+// padding-top: 10rem;
+// }
+//
+// .zweiteheimat-cover-dark {
+// position: relative;
+// height: 45em;
+// }
+//
+// .zweiteheimat-cover-inside {
+// margin: 0;
+// padding-top: 10rem;
+// }
+// }
+//
+// /* Large devices (laptops/desktops, 992px and down) */
+// @media screen and (max-width: 992px) {
+// /* Ferienwohnungen & Zimmer */
+// .second-row--unternehmungen {
+// margin: 0;
+// }
+//
+// .lieblingsort-cover-dark {
+// position: relative;
+// height: 40em;
+// }
+//
+// .lieblingsort-cover-inside {
+// margin: 0;
+// padding-top: 6rem;
+// }
+//
+// .zweiteheimat-cover-dark {
+// position: relative;
+// height: 40em;
+// }
+//
+// .zweiteheimat-cover-inside {
+// margin: 0;
+// padding-top: 6rem;
+// }
+// }
+//
+// /* small devices (phones, 767px and down) */
+// @media screen and (max-width: 767px) {
+// /* Ferienwohnungen */
+// .lieblingsort-cover-dark {
+// position: relative;
+// height: 35em;
+// }
+//
+// .lieblingsort-cover-inside {
+// margin: 0;
+// padding-top: 5rem;
+// }
+//
+// .zweiteheimat-cover-dark {
+// position: relative;
+// height: 35em;
+// }
+//
+// .zweiteheimat-cover-inside {
+// margin: 0;
+// padding-top: 5rem;
+// }
+// }
+//
+// /* Extra small devices (phones, 600px and down) */
+// @media screen and (max-width: 600px) {
+// /* Ferienwohnungen */
+// .lieblingsort-cover-dark {
+// position: relative;
+// height: 35em;
+// }
+//
+// .lieblingsort-cover-inside {
+// margin: 0;
+// padding-top: 5rem;
+// }
+//
+// .cover-picture-beschreibung {
+// font-size: 1.15rem !important;
+// }
+//
+// .zweiteheimat-cover-dark {
+// position: relative;
+// height: 35em;
+// }
+//
+// .zweiteheimat-cover-inside {
+// margin: 0;
+// padding-top: 5rem;
+// }
+// }

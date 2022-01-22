@@ -34,3 +34,81 @@
   .kontakt-link:active {
     border-bottom: 2.5px solid #6e6e6e;
   }
+
+  /* Extra large devices (large laptops and desktops, 1200px and down) */
+@media screen and (max-width: 1200px) {
+
+
+    /* Ferienwohnungen & lieblingsort-End */
+  
+    /* Kontakt */
+    .kontakt-cover-dark {
+      position: relative;
+      height: 45em;
+    }
+  
+    .kontakt-cover-inside {
+      padding-top: 10rem;
+    }
+    /* Kontakt-End */}
+
+    /* Large devices (laptops/desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+
+
+    /* Kontakt */
+    .kontakt-cover-dark {
+      position: relative;
+      height: 40em;
+    }
+  
+    .kontakt-cover-inside {
+      padding-top: 6rem;
+    }
+  
+    /* Kontakt-End */}
+
+    /* small devices (phones, 767px and down) */
+@media screen and (max-width: 767px) {
+
+    /* Kontakt */
+    .kontakt-cover-dark {
+      position: relative;
+      height: 35em;
+    }
+  
+    .kontakt-cover-inside {
+      padding-top: 5rem;
+    }
+    /* Kontakt-End */}
+
+    /* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+
+    /* Kontakt */
+    .kontakt-cover-dark {
+      position: relative;
+      height: 35em;
+    }
+  
+    .kontakt-cover-inside {
+      margin: 0;
+      padding-top: 5rem;
+    }
+    /* Kontakt-End */}
+
+    /* Extra small devices (phones, 406px and down) */
+@media screen and (max-width: 406px) {
+
+    /* Kontakt */
+    .kontakt-cover-dark {
+      position: relative;
+      height: 35em;
+    }
+  
+    .kontakt-cover-inside {
+      margin: 0;
+      padding-top: 3rem;
+    }
+    /* Kontakt-End */}

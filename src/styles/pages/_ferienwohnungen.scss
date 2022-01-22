@@ -77,3 +77,163 @@
   .hike-icon {
     font-size: 50px;
   }
+
+  /* Extra large devices (large laptops and desktops, 1200px and down) */
+@media screen and (max-width: 1200px) {
+    /* Ferienwohnungen & Zimmer */
+     .second-row--unternehmungen {
+       margin: 0;
+     }
+   
+     .lieblingsort-cover-dark {
+       position: relative;
+       height: 45em;
+     }
+   
+     .lieblingsort-cover-inside {
+       margin: 0;
+       padding-top: 10rem;
+     }
+   
+     .zweiteheimat-cover-dark {
+       position: relative;
+       height: 45em;
+     }
+   
+     .zweiteheimat-cover-inside {
+       margin: 0;
+       padding-top: 10rem;
+     }
+    }
+
+    /* Large devices (laptops/desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+
+    /* Ferienwohnungen & Zimmer */
+    .second-row--unternehmungen {
+      margin: 0;
+    }
+  
+    .lieblingsort-cover-dark {
+      position: relative;
+      height: 40em;
+    }
+  
+    .lieblingsort-cover-inside {
+      margin: 0;
+      padding-top: 6rem;
+    }
+  
+    .zweiteheimat-cover-dark {
+      position: relative;
+      height: 40em;
+    }
+  
+    .zweiteheimat-cover-inside {
+      margin: 0;
+      padding-top: 6rem;
+    }}
+
+    /* small devices (phones, 767px and down) */
+@media screen and (max-width: 767px) {
+
+    /* Ferienwohnungen */
+    .lieblingsort-cover-dark {
+      position: relative;
+      height: 35em;
+    }
+  
+    .lieblingsort-cover-inside {
+      margin: 0;
+      padding-top: 5rem;
+    }
+  
+    .zweiteheimat-cover-dark {
+      position: relative;
+      height: 35em;
+    }
+  
+    .zweiteheimat-cover-inside {
+      margin: 0;
+      padding-top: 5rem;
+    }}
+
+    /* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+    .cover-page-zweite-heimat-container {
+      margin-top: 1.75rem;
+    }
+  
+    .cover-page-lieblingsort-container {
+      margin-top: -6rem;
+      margin-bottom: -3rem;  
+    }
+  
+    /* Ferienwohnungen */
+    .lieblingsort-cover-dark {
+      position: relative;
+      height: 35em;
+    }
+  
+    .lieblingsort-cover-inside {
+      margin: 0;
+      padding-top: 5rem;
+    }
+  
+    .cover-picture-beschreibung {
+      font-size: 1.15rem !important; 
+    }
+    
+    .zweiteheimat-cover-dark {
+      position: relative;
+      height: 35em;
+    }
+  
+    .zweiteheimat-cover-inside {
+      margin: 0;
+      padding-top: 5rem;
+    }}
+
+    /* Extra small devices (phones, 406px and down) */
+@media screen and (max-width: 406px) {
+
+    .cover-page-zweite-heimat-container {
+      margin-top: 2rem;
+      margin-bottom: -2rem;  
+    }
+  
+    .cover-page-zweite-heimat {
+      display: none;
+    }
+  
+    .cover-page-lieblingsort-container {
+      margin-top: -6rem;
+      margin-bottom: -3rem;  
+    }
+  
+    .cover-page-lieblingsort {
+      display: none;
+    }
+  
+    /* Ferienwohnungen */
+    .lieblingsort-cover-dark {
+      position: relative;
+      height: 35em;
+    }
+  
+    .lieblingsort-cover-inside {
+      margin: 0;
+      padding-top: 3rem;
+    }
+  
+    .zweiteheimat-cover-dark {
+      position: relative;
+      height: 35em;
+    }
+  
+    .zweiteheimat-cover-inside {
+      margin: 0;
+      padding-top: 3rem;
+    }
+}  

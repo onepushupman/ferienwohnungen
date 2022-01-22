@@ -1,26 +1,4 @@
-/* Cover */
-.block-cover {
-    position: relative;
-    border: 0.2rem solid #3d3d3d;
-    bottom: 10rem;
-    background-color: white;
-    z-index: 10;
-  }
-  
-  .cover-heading {
-    font-family: Amithen;
-    font-size: 7rem;
-    margin-top: 5rem;
-  }
-  
-  .cover-subheading {
-    text-transform: uppercase;
-    letter-spacing: 0.8rem;
-    font-weight: 100;
-    font-family: "Khand", sans-serif;
-    margin-bottom: 5rem;
-  }
-  /* Cover-End */
+
 
   .zweiteheimat-ferienwohnung-container {
     margin-top: -6rem;
@@ -30,3 +8,47 @@
     margin-top: 6rem !important;
     margin-bottom: 4rem !important;
   }
+
+  /* Extra large devices (large laptops and desktops, 1200px and down) */
+@media screen and (max-width: 1200px) {
+
+
+  .diejungesuedpfalz-partner {
+    margin-top: 1.75rem; 
+  }
+
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+
+  .elsässer-käselädl-partner {
+    margin-top: 1rem; 
+  }
+  
+}
+/* small devices (phones, 767px and down) */
+@media screen and (max-width: 767px) {
+
+
+  /* Ausflüge-End */
+  .elsässer-käselädl-partner {
+    margin-top: 2rem; 
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+  .elsässer-käselädl-partner {
+    margin-right: 2.3rem; 
+  }
+}
+
+/* Extra small devices (phones, 406px and down) */
+@media screen and (max-width: 406px) {
+
+  .elsässer-käselädl-partner {
+    margin-right: 2.8rem;
+    width: 78%; 
+  }
+}

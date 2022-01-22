@@ -20,3 +20,61 @@
   .nav-link:hover {
     background-color: #eeeeee;
   }
+
+  /* Extra large devices (super large laptops and desktops, 1399px and down) */
+@media screen and (max-width: 1399px) {
+
+  /* Navigation */
+  .nav {
+    padding-left: 6.93rem;
+  }
+  /* Navigation-End */
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and down) */
+@media screen and (max-width: 1200px) {
+
+  /* Navigation */
+  .nav {
+    padding-left: 1.93rem;
+  }
+  /* Navigation-End */
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+
+  /* Navigation */
+  .nav {
+    padding-left: 0rem;
+  }
+  /* Navigation-End */}
+
+  /* small devices (phones, 767px and down) */
+@media screen and (max-width: 767px) {
+
+  /* Navigation */
+  .nav {
+    padding-left: 0rem;
+  }
+  /* Navigation-End */}
+
+  /* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+  /* Navigation */
+  .nav {
+    padding-left: 0rem;
+  }
+
+  /* Navigation-End */}
+
+  /* Extra small devices (phones, 406px and down) */
+@media screen and (max-width: 406px) {
+
+  /* Navigation */
+  .nav {
+    padding-left: 0rem;
+  }
+  /* Navigation-End */}

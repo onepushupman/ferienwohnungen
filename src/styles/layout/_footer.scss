@@ -62,3 +62,10 @@
   .footer-link-container {
     margin-top: 0rem;
   }
+
+  /* Large devices (laptops/desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+
+  .footer-link-container {
+    margin-top: 1rem;
+  }}

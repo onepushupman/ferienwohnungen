@@ -1,0 +1,245 @@
+/* Cover */
+.block-cover {
+  position: relative;
+  border: 0.2rem solid #3d3d3d;
+  bottom: 10rem;
+  background-color: white;
+  z-index: 10;
+}
+
+.cover-heading {
+  font-family: Amithen;
+  font-size: 7rem;
+  margin-top: 5rem;
+}
+
+.cover-subheading {
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  font-weight: 100;
+  font-family: "Khand", sans-serif;
+  margin-bottom: 5rem;
+}
+/* Cover-End */
+
+/* Super large devices (large laptops and desktops, 1810px and down) */
+@media screen and (max-width: 1810px) {
+  /* Cover */
+  .block-cover {
+    position: relative;
+    border: 0.2rem solid #3d3d3d;
+    bottom: 7rem;
+    width: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    z-index: 10;
+  }
+
+  .cover-heading {
+    font-family: Amithen;
+    font-size: 6rem;
+    margin-top: 3rem;
+  }
+
+  .cover-subheading {
+    text-transform: uppercase;
+    letter-spacing: 0.6rem;
+    font-weight: 100;
+    font-family: "Khand", sans-serif;
+    font-size: 1.7rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Cover-End */
+}
+
+/* Extra large devices (super large laptops and desktops, 1399px and down) */
+@media screen and (max-width: 1399px) {
+
+    /* Cover */
+    .block-cover {
+      position: relative;
+      border: 0.2rem solid #3d3d3d;
+      bottom: 6rem;
+      width: 85%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      z-index: 10;
+    }
+  
+    .cover-heading {
+      font-family: Amithen;
+      font-size: 5rem;
+      margin-top: 3rem;
+    }
+  
+    .cover-subheading {
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      font-weight: 100;
+      font-family: "Khand", sans-serif;
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+    }
+  
+    /* Cover-End */
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and down) */
+@media screen and (max-width: 1200px) {
+
+    /* Cover */
+    .block-cover {
+      position: relative;
+      border: 0.2rem solid #3d3d3d;
+      bottom: 4rem;
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      z-index: 10;
+    }
+  
+    .cover-heading {
+      font-family: Amithen;
+      font-size: 4rem;
+      margin-top: 3rem;
+    }
+  
+    .cover-subheading {
+      text-transform: uppercase;
+      letter-spacing: 0.5rem;
+      font-weight: 100;
+      font-family: "Khand", sans-serif;
+      font-size: 1.4rem;
+      margin-bottom: 3rem;
+    }
+  
+    /* Cover-End */
+}
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media screen and (max-width: 992px) {
+
+    /* Cover */
+    .block-cover {
+      position: relative;
+      border: 0.2rem solid #3d3d3d;
+      bottom: 3rem;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      z-index: 10;
+    }
+  
+    .cover-heading {
+      font-family: Amithen;
+      font-size: 3.2rem;
+      margin-top: 2.2rem;
+    }
+  
+    .cover-subheading {
+      text-transform: uppercase;
+      letter-spacing: 0.35rem;
+      font-weight: 100;
+      font-family: "Khand", sans-serif;
+      font-size: 1.2rem;
+      margin-bottom: 2.2rem;
+    }
+    /* Cover-End */}
+
+    /* small devices (phones, 767px and down) */
+@media screen and (max-width: 767px) {
+
+    /* Cover */
+    .block-cover {
+      position: relative;
+      border: 0.2rem solid #3d3d3d;
+      bottom: 2rem;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      z-index: 10;
+    }
+  
+    .cover-heading {
+      font-family: Amithen;
+      font-size: 3rem;
+      margin-top: 2rem;
+    }
+  
+    .cover-subheading {
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      font-weight: 100;
+      font-family: "Khand", sans-serif;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+    /* Cover-End */}
+
+    /* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+
+    /* Cover */
+    .block-cover {
+      position: relative;
+      border: 0.2rem solid #3d3d3d;
+      bottom: 1rem;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      z-index: 10;
+    }
+  
+    .cover-heading {
+      font-family: Amithen;
+      font-size: 2.5rem;
+      margin-top: 1.5rem;
+    }
+  
+    .cover-subheading {
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      font-weight: 100;
+      font-family: "Khand", sans-serif;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    /* Cover-End */}
+
+    /* Extra small devices (phones, 406px and down) */
+@media screen and (max-width: 406px) {
+
+    /* Cover */
+    .block-cover {
+      position: relative;
+      border: 0.2rem solid #3d3d3d;
+      bottom: 1rem;
+      width: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      z-index: 10;
+    }
+  
+    .cover-heading {
+      font-family: Amithen;
+      font-size: 2.5rem;
+      margin-top: 1.5rem;
+    }
+  
+    .cover-subheading {
+      text-transform: uppercase;
+      letter-spacing: 0.25rem;
+      font-weight: 100;
+      font-family: "Khand", sans-serif;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+    /* Cover-End */}

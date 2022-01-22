@@ -1,4 +1,8 @@
-@use 'base/_global.scss'; // Global styles
-@use 'base/_mixins.scss'; // Mixins
-@use 'base/_variables.scss'; // Variables
-@use 'base/_typography.scss'; // Typography styles
+@use 'vendors/_bootstrap.scss'; // Custom Bootstrap
+
+@use 'vendors/__vendors-dir.scss'; // Vendor styles
+@use 'base/__base-dir.scss'; // Base styles
+@use 'utilities/__utilities-dir.scss'; // Utilities styles
+@use 'layout/__layout-dir.scss'; // Navigation & Header styles
+@use 'pages/__pages-dir.scss'; // Pages styles
+@use 'modules/__modules-dir.scss'; // Modules styles

@@ -1,0 +1,26 @@
+.underline {
+    color: #8fa996;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .underline:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: -5px;
+    background: #181a1bbe;
+    height: 3px;
+    transition-property: left right;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+  }
+  
+  .underline:hover:after,
+  .underline:focus:after,
+  .underline:active:after {
+    right: 0;
+  }

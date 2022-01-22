@@ -1,0 +1,23 @@
+/* Cover */
+.block-cover {
+    position: relative;
+    border: 0.2rem solid #3d3d3d;
+    bottom: 10rem;
+    background-color: white;
+    z-index: 10;
+  }
+  
+  .cover-heading {
+    font-family: Amithen;
+    font-size: 7rem;
+    margin-top: 5rem;
+  }
+  
+  .cover-subheading {
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+    font-weight: 100;
+    font-family: "Khand", sans-serif;
+    margin-bottom: 5rem;
+  }
+  /* Cover-End */

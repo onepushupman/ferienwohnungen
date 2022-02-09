@@ -1,8 +1,9 @@
 .lieblingsort-cover-dark {
-  // position: relative;
-  // height: 65em;
   position: relative;
   height: 35em;
+  @include xl {
+    height: 39em;
+  }
 }
 
 .lieblingsort-cover-dark::before {
@@ -21,17 +22,28 @@
 }
 
 .lieblingsort-cover-inside {
-  // position: relative;
-  // padding-top: 18em;
   margin: 0;
   padding-top: 5.89rem;
+  @include xl {
+    padding-top: 7.35rem;
+  }
 }
 
 .zweiteheimat-cover-dark {
-  //position: relative;
-  //height: 65em;
   position: relative;
   height: 35em;
+  @include lg {
+    height: 42em;
+  }
+  @include xl {
+    height: 52em;
+  }
+  @include xxl {
+    height: 65em;
+  }
+  @include xxxl {
+    height: 75em;
+  }
 }
 
 .zweiteheimat-cover-dark::before {
@@ -50,15 +62,41 @@
 }
 
 .zweiteheimat-cover-inside {
-  //position: relative;
-  //padding-top: 18em;
+  // position: relative;
   margin: 0;
   padding-top: 5.89rem;
+  @include md {
+    padding-top: 6rem;
+    padding-left: 2rem;
+  }
+  @include lg {
+    padding-top: 9rem;
+    padding-left: 4rem;
+  }
+  @include xl {
+    padding-top: 12rem;
+    padding-left: 6.5rem;
+  }
+  @include xxl {
+    padding-top: 18.5rem;
+    padding-left: 10rem;
+  }
+  @include xxxl {
+    padding-top: 23rem;
+    padding-left: 15rem;
+  }
+}
+
+.einrichtung {
+  margin-bottom: 10%;
 }
 
 .feriencover-picture-beschreibung-person {
   display: flex;
   font-size: 1.1rem !important;
+  @include xl {
+    font-size: 1.25rem !important;
+  }
 }
 
 .feriencover-picture-beschreibung-person::before {
@@ -74,6 +112,9 @@
 .feriencover-picture-beschreibung-euro {
   display: flex;
   font-size: 1.1rem !important;
+  @include xl {
+    font-size: 1.25rem !important;
+  }
 }
 
 .feriencover-picture-beschreibung-euro::before {
@@ -89,10 +130,22 @@
 .brand-font {
   font-family: Amithen;
   font-size: 3.58rem;
+  @include lg {
+    font-size: 4.2rem;
+  }
+  @include xl {
+    font-size: 5.7rem;
+  }
+  @include xxl {
+    font-size: 8.3rem;
+  }
 }
 
 .star-icon {
   height: 1.2rem;
+  @include xl {
+    height: 1.5rem;
+  }
 }
 
 .person-icon {
@@ -158,7 +211,9 @@
 //
 // /* Large devices (laptops/desktops, 992px and down) */
 // @media screen and (max-width: 992px) {
+
 // /* Ferienwohnungen & Zimmer */
+
 // .second-row--unternehmungen {
 // margin: 0;
 // }

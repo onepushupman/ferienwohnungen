@@ -41,8 +41,8 @@
   @include xxl {
     height: 65em;
   }
-  @include xxxl {
-    height: 75em;
+  @include xxxxl {
+    height: 70em;
   }
 }
 
@@ -62,28 +62,24 @@
 }
 
 .zweiteheimat-cover-inside {
-  // position: relative;
-  margin: 0;
   padding-top: 5.89rem;
   @include md {
     padding-top: 6rem;
-    padding-left: 2rem;
   }
   @include lg {
     padding-top: 9rem;
-    padding-left: 4rem;
   }
   @include xl {
-    padding-top: 12rem;
-    padding-left: 6.5rem;
+    padding-top: 14rem;
   }
   @include xxl {
     padding-top: 18.5rem;
-    padding-left: 10rem;
   }
   @include xxxl {
-    padding-top: 23rem;
-    padding-left: 15rem;
+    padding-top: 20rem;
+  }
+  @include xxxxl {
+    padding-top: 22rem;
   }
 }
 

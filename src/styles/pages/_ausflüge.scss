@@ -1,8 +1,17 @@
 .ausflüge-cover-dark {
-    // position: relative;
-    // height: 65em;
-    position: relative;
-    height: 35em;
+  height: 35em;
+  @include lg {
+    height: 42em;
+  }
+  @include xl {
+    height: 52em;
+  }
+  @include xxl {
+    height: 65em;
+  }
+  @include xxxxl {
+    height: 70em;
+  }
   }
   
   .ausflüge-cover-dark::before {
@@ -21,10 +30,25 @@
   }
   
   .ausflüge-cover-inside {
-    // position: relative;
-    // padding-top: 18em;
-    // margin: 0;
     padding-top: 5.89rem;
+    @include md {
+      padding-top: 6rem;
+    }
+    @include lg {
+      padding-top: 9rem;
+    }
+    @include xl {
+      padding-top: 14rem;
+    }
+    @include xxl {
+      padding-top: 18.5rem;
+    }
+    @include xxxl {
+      padding-top: 20rem;
+    }
+    @include xxxxl {
+      padding-top: 22rem;
+    }
   }
   
   .ausflugcover-picture-beschreibung-walk {

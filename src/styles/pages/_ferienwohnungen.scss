@@ -107,7 +107,10 @@
 }
 
 .einrichtung {
-  margin-bottom: 10%;
+  margin-bottom: 6%;
+  @include xl {
+    margin-bottom: 0%;
+  }
 }
 
 .feriencover-picture-beschreibung-person {

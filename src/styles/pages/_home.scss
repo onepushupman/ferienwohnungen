@@ -1,54 +1,56 @@
-
-
-  .zweiteheimat-ferienwohnung-container {
-    margin-top: -6rem;
-  }
-  
   .partner-container {
     margin-top: 6rem !important;
     margin-bottom: 4rem !important;
   }
 
-  /* Extra large devices (large laptops and desktops, 1200px and down) */
-@media screen and (max-width: 1200px) {
-
+  .elsässer-käselädl-partner {
+    width: 90%;
+    padding: 0 1.5rem 0 0;
+  }
 
   .diejungesuedpfalz-partner {
-    margin-top: 1.75rem; 
+    // margin-top: 1.75rem; 
   }
 
-}
+// .landing-beschreibung {
+  // font-size: 1.1rem !important;
+  // @include xl {
+    // font-size: 1.25rem !important;
+  // }
+// }
 
-/* Large devices (laptops/desktops, 992px and down) */
-@media screen and (max-width: 992px) {
+  // /* Extra large devices (large laptops and desktops, 1200px and down) */
+// @media screen and (max-width: 1200px) {
+  // .diejungesuedpfalz-partner {
+    // margin-top: 1.75rem; 
+  // }
+// } 
 
-  .elsässer-käselädl-partner {
-    margin-top: 1rem; 
-  }
-  
-}
-/* small devices (phones, 767px and down) */
-@media screen and (max-width: 767px) {
+// /* Large devices (laptops/desktops, 992px and down) */
+// @media screen and (max-width: 992px) {
+  // .elsässer-käselädl-partner {
+    // margin-top: 1rem; 
+  // }
+// }
+// /* small devices (phones, 767px and down) */
+// @media screen and (max-width: 767px) {
+  // /* Ausflüge-End */
+  // .elsässer-käselädl-partner {
+    // margin-top: 2rem; 
+  // }
+// }
 
+// /* Extra small devices (phones, 600px and down) */
+// @media screen and (max-width: 600px) {
+  // .elsässer-käselädl-partner {
+    // margin-right: 2.3rem; 
+  // }
+// }
 
-  /* Ausflüge-End */
-  .elsässer-käselädl-partner {
-    margin-top: 2rem; 
-  }
-}
-
-/* Extra small devices (phones, 600px and down) */
-@media screen and (max-width: 600px) {
-  .elsässer-käselädl-partner {
-    margin-right: 2.3rem; 
-  }
-}
-
-/* Extra small devices (phones, 406px and down) */
-@media screen and (max-width: 406px) {
-
-  .elsässer-käselädl-partner {
-    margin-right: 2.8rem;
-    width: 78%; 
-  }
-}
+// /* Extra small devices (phones, 406px and down) */
+// @media screen and (max-width: 406px) {
+  // .elsässer-käselädl-partner {
+    // margin-right: 2.8rem;
+    // width: 78%; 
+  // }
+// }

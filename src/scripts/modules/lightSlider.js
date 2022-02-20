@@ -1,4 +1,4 @@
-if ($(window).width() < 768) {
+if ($(window).width() < 600) {
   // jQuery lightSlider Cover
   $(document).ready(function () {
     $("#light-slider").lightSlider({

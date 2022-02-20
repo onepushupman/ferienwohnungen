@@ -1,3 +1,16 @@
+  .home-section {
+    margin-top: -20%;
+    @include sm {
+      margin-top: -10%;
+    }
+    @include md {
+      margin-top: -5%;
+    }
+    @include lg {
+      margin-top: 0%;
+    }
+  }
+  
   .partner-container {
     margin-top: 6rem !important;
     margin-bottom: 4rem !important;

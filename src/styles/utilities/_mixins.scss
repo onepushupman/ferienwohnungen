@@ -5,6 +5,7 @@
   or object-fit and object-position:
   @include object-fit(cover, top);
 */
+
 @mixin object-fit($fit: fill, $position: null) {
   -o-object-fit: $fit;
   object-fit: $fit;
@@ -29,55 +30,55 @@
 // Small devices
 @mixin sm {
   @media (min-width: #{$screen-sm-min}) {
-      @content;
+    @content;
   }
 }
 
 // Medium devices
 @mixin md {
   @media (min-width: #{$screen-md-min}) {
-      @content;
+    @content;
   }
 }
 
 // Large devices
 @mixin lg {
   @media (min-width: #{$screen-lg-min}) {
-      @content;
+    @content;
   }
 }
 
 // Extra large devices
 @mixin xl {
   @media (min-width: #{$screen-xl-min}) {
-      @content;
+    @content;
   }
 }
 
 // Extra large devices
 @mixin xxl {
   @media (min-width: #{$screen-xxl-min}) {
-      @content;
+    @content;
   }
 }
 
 // Extra large devices
 @mixin xxxl {
   @media (min-width: #{$screen-xxxl-min}) {
-      @content;
+    @content;
   }
 }
 
 // Extra large devices
 @mixin xxxxl {
   @media (min-width: #{$screen-xxxxl-min}) {
-      @content;
+    @content;
   }
 }
 
 // Custom devices
 @mixin rwd($screen) {
-  @media (min-width: $screen+'px') {
-      @content;
+  @media (min-width: $screen+"px") {
+    @content;
   }
 }

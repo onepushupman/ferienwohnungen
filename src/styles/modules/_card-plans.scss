@@ -1,28 +1,28 @@
 .card-plans-separator {
-    border-bottom: 1px solid #cacaca;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  
-  .card-plans-separator:last-child {
-    border-bottom: 0px solid;
-  }
-  
-  .card {
-    border: 0.15rem solid #818181;
-    transition: all 0.2s ease-in-out;
-  }
-  
-  .card:hover {
-    transform: scale(1.05);
-  }
-  
-  .card-appartement {
-    border: none;
-    object-fit: cover; 
-    /* removes grey border which is needed on the home page price tables */
-  }
-  
-  .pricelist-icon {
-    font-size: 40px;
-  }
+  border-bottom: 1px solid #cacaca;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.card-plans-separator:last-child {
+  border-bottom: 0px solid;
+}
+
+.card {
+  border: 0.15rem solid #818181;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-appartement {
+  border: none;
+  object-fit: cover;
+  /* removes grey border which is needed on the home page price tables */
+}
+
+.pricelist-icon {
+  font-size: 40px;
+}

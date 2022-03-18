@@ -13,83 +13,83 @@
   @include xxxxl {
     height: 70em;
   }
-  }
-  
-  .ausflüge-cover-dark::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    background-image: url("https://images.unsplash.com/photo-1572360678077-0ab5ce1be418?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1667&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    -webkit-filter: brightness(35%);
-    filter: brightness(35%);
-  }
-  
-  .ausflüge-cover-inside {
-    padding-top: 5.89rem;
-    @include md {
-      padding-top: 6rem;
-    }
-    @include lg {
-      padding-top: 9rem;
-    }
-    @include xl {
-      padding-top: 14rem;
-    }
-    @include xxl {
-      padding-top: 18.5rem;
-    }
-    @include xxxl {
-      padding-top: 20rem;
-    }
-    @include xxxxl {
-      padding-top: 22rem;
-    }
-  }
-  
-  .ausflugcover-picture-beschreibung-walk {
-    display: flex;
-    font-size: 1.1rem !important;
-  }
-  
-  .ausflugcover-picture-beschreibung-walk::before {
-    content: "";
-    background-image: url(../resources/svg/walk-outline.svg);
-    background-repeat: no-repeat;
-    background-size: 2rem;
-    height: 2rem;
-    width: 2rem;
-    padding-right: 2.5rem;
-  }
+}
 
-  .ausflugcover-picture-beschreibung-map {
-    display: flex;
-    font-size: 1.1rem !important;
-  }
-  
-  .ausflugcover-picture-beschreibung-map::before {
-    content: "";
-    background-image: url(../resources/svg/map-outline.svg);
-    background-repeat: no-repeat;
-    background-size: 2rem;
-    height: 2rem;
-    width: 2rem;
-    padding-right: 2.5rem;
-  }
+.ausflüge-cover-dark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  background-image: url("https://images.unsplash.com/photo-1572360678077-0ab5ce1be418?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1667&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter: brightness(35%);
+  filter: brightness(35%);
+}
 
-  .pfalz-icon {
-    font-size: 50px;
+.ausflüge-cover-inside {
+  padding-top: 5.89rem;
+  @include md {
+    padding-top: 6rem;
   }
-  
-  .glass-icon {
-    font-size: 25px;
+  @include lg {
+    padding-top: 9rem;
   }
-  
-  .doktorenhof-container {
-    z-index: 2;
+  @include xl {
+    padding-top: 14rem;
   }
+  @include xxl {
+    padding-top: 18.5rem;
+  }
+  @include xxxl {
+    padding-top: 20rem;
+  }
+  @include xxxxl {
+    padding-top: 22rem;
+  }
+}
+
+.ausflugcover-picture-beschreibung-walk {
+  display: flex;
+  font-size: 1.1rem !important;
+}
+
+.ausflugcover-picture-beschreibung-walk::before {
+  content: "";
+  background-image: url(../resources/svg/walk-outline.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+  padding-right: 2.5rem;
+}
+
+.ausflugcover-picture-beschreibung-map {
+  display: flex;
+  font-size: 1.1rem !important;
+}
+
+.ausflugcover-picture-beschreibung-map::before {
+  content: "";
+  background-image: url(../resources/svg/map-outline.svg);
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  height: 2rem;
+  width: 2rem;
+  padding-right: 2.5rem;
+}
+
+.pfalz-icon {
+  font-size: 50px;
+}
+
+.glass-icon {
+  font-size: 25px;
+}
+
+.doktorenhof-container {
+  z-index: 2;
+}
